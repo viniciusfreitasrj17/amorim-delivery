@@ -1,9 +1,10 @@
 import { Router } from 'express';
-import RunController from './controllers/RunController';
+import ClientController from './controllers/ClientController';
 
 const routes = Router();
 
-// routes Run
-routes.get('/', RunController.index);
+// routes Client
+routes.get('/client', ClientController.index);
+routes.post('/client', ClientController.store);
 
 export default routes;
