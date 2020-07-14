@@ -7,39 +7,39 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="diagram.svg"
-   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
-   inkscape:export-ydpi="96"
-   inkscape:export-xdpi="96"
-   inkscape:export-filename="/home/vinicius/Pictures/test-diag.png"
-   width="3000px"
-   height="2100px"
-   viewBox="0 0 3000 2100"
+   id="SVGRoot"
    version="1.1"
-   id="SVGRoot">
+   viewBox="0 0 3000 2100"
+   height="2100px"
+   width="3000px"
+   inkscape:export-filename="/home/vinicius/Pictures/test-diag.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   sodipodi:docname="diagram.svg">
   <defs
      id="defs420" />
   <sodipodi:namedview
-     inkscape:guide-bbox="true"
-     showguides="true"
-     inkscape:window-maximized="1"
-     inkscape:window-y="27"
-     inkscape:window-x="0"
-     inkscape:window-height="713"
-     inkscape:window-width="1366"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="px"
-     inkscape:cy="1055.6531"
-     inkscape:cx="1624.0257"
-     inkscape:zoom="0.24748737"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#ffffff"
-     id="base" />
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="1041.1753"
+     inkscape:cy="981.05547"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata423">
     <rdf:RDF>
@@ -48,310 +48,362 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1">
     <rect
-       sodipodi:insensitive="true"
-       y="0.27592587"
-       x="0.43491316"
-       height="2100.4451"
-       width="3007.5986"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:9.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1270"
-       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:9.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       width="3007.5986"
+       height="2100.4451"
+       x="0.43491316"
+       y="0.27592587"
+       sodipodi:insensitive="true" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.9;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       y="125.66992"
+       x="1291.0791"
+       height="633.8526"
+       width="517.73395"
        id="rect433-3"
-       width="517.73395"
-       height="633.8526"
-       x="-2193.1692"
-       y="969.95502" />
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.9;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -2193.2868,1083.2822 h 517.9734"
-       id="path1266-6" />
+       id="path1266-6"
+       d="m 1290.9615,238.9971 h 517.9734"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -2191.5333,1476.1985 h 517.2575"
-       id="path1268-7" />
+       id="path1268-7"
+       d="m 1292.715,631.9134 h 517.2575"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.9;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect433-5"
-       width="517.73395"
-       height="633.8526"
+       y="-225.51988"
        x="-3445.0366"
-       y="-225.51988" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -3445.1542,-112.19273 h 517.9734"
-       id="path1266-3" />
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -3443.4007,280.72357 h 517.2575"
-       id="path1268-5" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.9;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect433-6"
-       width="517.73395"
        height="633.8526"
+       width="517.73395"
+       id="rect433-5"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.9;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path1266-3"
+       d="m -3445.1542,-112.19273 h 517.9734"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path1268-5"
+       d="m -3443.4007,280.72357 h 517.2575"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       y="1188.5808"
        x="-3184.6213"
-       y="1188.5808" />
+       height="633.8526"
+       width="517.73395"
+       id="rect433-6"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:10.9;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1266-2"
        d="m -3184.7389,1301.908 h 517.9734"
-       id="path1266-2" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1268-9"
        d="m -3182.9854,1694.8242 h 517.2575"
-       id="path1268-9" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10.9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
-       id="text1350"
-       y="286.27405"
-       x="1211.1208"
+       xml:space="preserve"
        style="font-size:40px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
-       xml:space="preserve"><tspan
-         y="286.27405"
-         x="1211.1208"
+       x="1211.1208"
+       y="286.27405"
+       id="text1350"><tspan
+         sodipodi:role="line"
          id="tspan1348"
-         sodipodi:role="line" /></text>
+         x="1211.1208"
+         y="286.27405" /></text>
     <g
-       id="g1591">
-      <g
-         id="g1632">
-        <rect
-           y="95.039795"
-           x="233.73917"
-           height="1148.3301"
-           width="740.27893"
-           id="rect433-5-1"
-           style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:17.5433;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <path
-           id="path1266-3-2"
-           d="M 230.3001,205.04531 H 959.5986"
-           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:12.9338;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <path
-           id="path1268-5-7"
-           d="M 232.0536,1135.9616 H 968.4523"
-           style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:13.0056;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-        <text
-           id="text1346"
+       id="g1632">
+      <rect
+         y="95.039795"
+         x="233.73917"
+         height="1148.3301"
+         width="740.27893"
+         id="rect433-5-1"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:17.5433;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path1266-3-2"
+         d="M 230.3001,205.04531 H 959.5986"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:12.9338;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path1268-5-7"
+         d="M 232.0536,1135.9616 H 968.4523"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:13.0056;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text1346"
+         y="172.89482"
+         x="354.341"
+         style="font-size:85.3333px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
            y="172.89482"
            x="354.341"
-           style="font-size:85.3333px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
-           xml:space="preserve"><tspan
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-             y="172.89482"
-             x="354.341"
-             id="tspan1344"
-             sodipodi:role="line">Cliente</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-size:64px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
+           id="tspan1344"
+           sodipodi:role="line">Cliente</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:64px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
+         x="277.57611"
+         y="299.59558"
+         id="text1346-3"><tspan
+           sodipodi:role="line"
+           id="tspan1344-7"
            x="277.57611"
            y="299.59558"
-           id="text1346-3"><tspan
-             sodipodi:role="line"
-             id="tspan1344-7"
-             x="277.57611"
-             y="299.59558"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*id: uuid</tspan><tspan
-             id="tspan1650"
-             sodipodi:role="line"
-             x="277.57611"
-             y="394.51367"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*name: string</tspan><tspan
-             sodipodi:role="line"
-             id="tspan1370"
-             x="277.57611"
-             y="489.43179"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*email: string</tspan><tspan
-             sodipodi:role="line"
-             id="tspan1374"
-             x="277.57611"
-             y="584.34991"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*password: string</tspan><tspan
-             id="tspan1380"
-             sodipodi:role="line"
-             x="277.57611"
-             y="679.26801"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*street: string</tspan><tspan
-             id="tspan1384"
-             sodipodi:role="line"
-             x="277.57611"
-             y="774.1861"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*address: string</tspan><tspan
-             id="tspan1386"
-             sodipodi:role="line"
-             x="277.57611"
-             y="869.10419"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*number: number</tspan><tspan
-             sodipodi:role="line"
-             x="277.57611"
-             y="964.02228"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-             id="tspan1617">*historyReq: number[]</tspan></text>
-      </g>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*id: uuid</tspan><tspan
+           id="tspan1650"
+           sodipodi:role="line"
+           x="277.57611"
+           y="394.51367"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*name: string</tspan><tspan
+           sodipodi:role="line"
+           id="tspan1370"
+           x="277.57611"
+           y="489.43179"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*email: string</tspan><tspan
+           sodipodi:role="line"
+           id="tspan1374"
+           x="277.57611"
+           y="584.34991"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*password: string</tspan><tspan
+           id="tspan1380"
+           sodipodi:role="line"
+           x="277.57611"
+           y="679.26801"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*street: string</tspan><tspan
+           id="tspan1384"
+           sodipodi:role="line"
+           x="277.57611"
+           y="774.1861"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*address: string</tspan><tspan
+           id="tspan1386"
+           sodipodi:role="line"
+           x="277.57611"
+           y="869.10419"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*number: number</tspan><tspan
+           sodipodi:role="line"
+           x="277.57611"
+           y="964.02228"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
+           id="tspan1617">*historyReq: number[]</tspan></text>
+      <text
+         id="text217"
+         y="337.3335"
+         x="1358.9442"
+         style="font-size:40px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
+         xml:space="preserve"><tspan
+           y="337.3335"
+           x="1358.9442"
+           id="tspan215"
+           sodipodi:role="line"></tspan></text>
     </g>
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:15.0134;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect433-5-1-1"
-       width="612.88312"
-       height="1015.8243"
+       y="909.52252"
        x="1291.0791"
-       y="909.52252" />
+       height="1015.8243"
+       width="612.88312"
+       id="rect433-5-1-1"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:15.0134;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:11.7415;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1266-3-2-0"
        d="m 1288.9049,1020.793 h 601.0419"
-       id="path1266-3-2-0" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:11.7415;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:11.756;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1268-5-7-5"
        d="M 1290.6584,1743.7093 H 1892.346"
-       id="path1268-5-7-5" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:11.756;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       id="text1346-7"
+       y="988.64252"
+       x="1412.9459"
+       style="font-size:85.3333px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
+         y="988.64252"
+         x="1412.9459"
+         id="tspan1344-4"
+         sodipodi:role="line">Request</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
+       x="1324.2736"
+       y="1108.3475"
+       id="text1346-3-2"><tspan
+         sodipodi:role="line"
+         id="tspan1344-7-0"
+         x="1324.2736"
+         y="1108.3475"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*id: uuid</tspan><tspan
+         sodipodi:role="line"
+         x="1324.2736"
+         y="1203.2656"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
+         id="tspan1654">*idCliente: string</tspan><tspan
+         id="tspan1634"
+         sodipodi:role="line"
+         x="1324.2736"
+         y="1298.1837"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*idFood: string[]</tspan><tspan
+         sodipodi:role="line"
+         id="tspan1374-3"
+         x="1324.2736"
+         y="1393.1018"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*amount: number[]</tspan><tspan
+         sodipodi:role="line"
+         x="1324.2736"
+         y="1488.0199"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
+         id="tspan1701">*date: Date</tspan><tspan
+         sodipodi:role="line"
+         x="1324.2736"
+         y="1582.938"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
+         id="tspan1703">*finished: boolean</tspan><tspan
+         id="tspan1386-0"
+         sodipodi:role="line"
+         x="1324.2736"
+         y="1677.8562"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*total: number</tspan></text>
+    <g
+       id="g1603"
+       transform="translate(1226.5378,-20.118584)">
+      <rect
+         y="80.627419"
+         x="937.87769"
+         height="1015.3909"
+         width="649.05713"
+         id="rect433-5-1-1-4"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:15.4468;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path1266-3-2-0-3"
+         d="M 935.48686,191.68118 H 1599.5191"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:12.3415;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path1268-5-7-5-3"
+         d="M 937.24036,914.59752 H 1572.3351"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:12.0779;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text1346-7-4"
+         y="159.53065"
+         x="1061.5277"
+         style="font-size:85.3333px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
+           y="159.53065"
+           x="1061.5277"
+           id="tspan1344-4-2"
+           sodipodi:role="line">Food</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:64px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
+         x="982.76288"
+         y="286.23145"
+         id="text1346-3-2-4"><tspan
+           sodipodi:role="line"
+           id="tspan1344-7-0-5"
+           x="982.76288"
+           y="286.23145"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*id: uuid</tspan><tspan
+           sodipodi:role="line"
+           x="982.76288"
+           y="381.14954"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
+           id="tspan1652">*name: string</tspan><tspan
+           sodipodi:role="line"
+           id="tspan1370-0-3"
+           x="982.76288"
+           y="476.06766"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*stock: boolean</tspan><tspan
+           sodipodi:role="line"
+           id="tspan1374-3-8"
+           x="982.76288"
+           y="570.98578"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*price: number</tspan><tspan
+           id="tspan1386-0-1"
+           sodipodi:role="line"
+           x="982.76288"
+           y="665.90387"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*category: number</tspan></text>
+    </g>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 286.66864,272.98509 H 125.64808 l 10.01472,1365.72011 1002.7318,-61.7143 -1.2349,-363.3299 214.3356,-48.8141"
+       id="path1679" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1817.934,1285.1667 246.6844,26.1527 -37.1853,-1084.92722 209.89,11.10391"
+       id="path1683" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 176.49187,225.84024 -1.90394,96.43711"
+       id="path1687" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1287.4639,1237.2282 -87.7377,-37.7866 88.8303,-65.8471"
+       id="path1691" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2162.0247,171.5626 -69.9808,55.63881 66.5572,61.22615"
+       id="path1695" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 1990.5016,1297.8791 c -22.7644,-18.3215 -46.8241,-35.5491 -68.8441,-54.8166 -11.1506,-9.7568 -9.7365,-13.5265 -17.3604,-13.5265"
+       id="path1697" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 1990.5016,1297.8791 -80.5073,50.8363"
+       id="path1699" />
     <text
        xml:space="preserve"
        style="font-size:85.3333px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
-       x="1412.9459"
-       y="988.64252"
-       id="text1346-7"><tspan
+       x="1341.3958"
+       y="212.63278"
+       id="text1346-36"><tspan
          sodipodi:role="line"
-         id="tspan1344-4"
-         x="1412.9459"
-         y="988.64252"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">Request</tspan></text>
+         id="tspan1344-75"
+         x="1341.3958"
+         y="212.63278"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">Category</tspan></text>
     <text
-       id="text1346-3-2"
-       y="1108.3475"
-       x="1324.2736"
+       id="text1346-3-3"
+       y="373.43741"
+       x="1342.4963"
        style="font-size:64px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-         y="1108.3475"
-         x="1324.2736"
-         id="tspan1344-7-0"
+         y="373.43741"
+         x="1342.4963"
+         id="tspan1344-7-5"
          sodipodi:role="line">*id: uuid</tspan><tspan
-         id="tspan1654"
+         id="tspan1617-0"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-         y="1203.2656"
-         x="1324.2736"
-         sodipodi:role="line">*idCliente: string</tspan><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-         y="1298.1837"
-         x="1324.2736"
-         sodipodi:role="line"
-         id="tspan1634">*idDish: string[]</tspan><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-         y="1393.1018"
-         x="1324.2736"
-         id="tspan1374-3"
-         sodipodi:role="line">*amount: number[]</tspan><tspan
-         id="tspan1701"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-         y="1488.0199"
-         x="1324.2736"
-         sodipodi:role="line">*date: Date</tspan><tspan
-         id="tspan1703"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-         y="1582.938"
-         x="1324.2736"
-         sodipodi:role="line">*finished: boolean</tspan><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-         y="1677.8562"
-         x="1324.2736"
-         sodipodi:role="line"
-         id="tspan1386-0">*total: number</tspan></text>
-    <g
-       transform="translate(1226.5378,-20.118584)"
-       id="g1603">
-      <rect
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:15.4468;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect433-5-1-1-4"
-         width="649.05713"
-         height="1015.3909"
-         x="937.87769"
-         y="80.627419" />
-      <path
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:12.3415;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 935.48686,191.68118 H 1599.5191"
-         id="path1266-3-2-0-3" />
-      <path
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:12.0779;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 937.24036,914.59752 H 1572.3351"
-         id="path1268-5-7-5-3" />
-      <text
-         xml:space="preserve"
-         style="font-size:85.3333px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
-         x="1059.5277"
-         y="159.53065"
-         id="text1346-7-4"><tspan
-           sodipodi:role="line"
-           id="tspan1344-4-2"
-           x="1059.5277"
-           y="159.53065"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">Dish</tspan></text>
-      <text
-         id="text1346-3-2-4"
-         y="286.23145"
-         x="982.76288"
-         style="font-size:64px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-           y="286.23145"
-           x="982.76288"
-           id="tspan1344-7-0-5"
-           sodipodi:role="line">*id: uuid</tspan><tspan
-           id="tspan1652"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-           y="381.14954"
-           x="982.76288"
-           sodipodi:role="line">*name: string</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-           y="476.06766"
-           x="982.76288"
-           id="tspan1370-0-3"
-           sodipodi:role="line">*stock: boolean</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-           y="570.98578"
-           x="982.76288"
-           id="tspan1374-3-8"
-           sodipodi:role="line">*price: number</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-           y="665.90387"
-           x="982.76288"
-           sodipodi:role="line"
-           id="tspan1386-0-1">*category: number</tspan></text>
-    </g>
+         y="468.3555"
+         x="1342.4963"
+         sodipodi:role="line">*name: string</tspan></text>
     <path
-       id="path1679"
-       d="M 286.66864,272.98509 H 125.64808 l 10.01472,1365.72011 1002.7318,-61.7143 -1.2349,-363.3299 214.3356,-48.8141"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       id="path1683"
-       d="m 1817.934,1285.1667 246.6844,26.1527 -37.1853,-1084.92722 209.89,11.10391"
+       sodipodi:nodetypes="cc"
+       id="path273"
+       d="m 1213.058,359.41719 145.6362,-15.1484"
        style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       id="path1687"
-       d="m 176.49187,225.84024 -1.90394,96.43711"
+       sodipodi:nodetypes="ccccc"
+       id="path275"
+       d="m 1213.058,359.41719 -5.1294,483.46202 782.2917,-34.86827 -7.4238,-192.1486 234.6945,-5.85276"
        style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       id="path1691"
-       d="m 1287.4639,1237.2282 -87.7377,-37.7866 88.8303,-65.8471"
-       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       id="path1695"
-       d="m 2162.0247,171.5626 -69.9808,55.63881 66.5572,61.22615"
-       style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <path
-       id="path1697"
-       d="m 1990.5016,1297.8791 c -22.7644,-18.3215 -46.8241,-35.5491 -68.8441,-54.8166 -11.1506,-9.7568 -9.7365,-13.5265 -17.3604,-13.5265"
+       id="path1100"
+       d="m 1262.8707,305.72337 c 0,43.19522 0,78.53395 0,113.10707"
        style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
     <path
-       id="path1699"
-       d="m 1990.5016,1297.8791 -80.5073,50.8363"
+       id="path1104"
+       d="m 2162.248,556.14885 -74.7114,50.35583 68.8723,63.28905"
        style="fill:none;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
   </g>
 </svg>

@@ -3,7 +3,8 @@ import {
   IsEmail,
   MinLength,
   IsNotEmpty,
-  IsAlphanumeric
+  IsAlphanumeric,
+  IsNumber
 } from 'class-validator';
 import Global from './Global';
 
@@ -38,6 +39,7 @@ export default class Client extends Global {
   address: string;
 
   @Column()
+  @IsNumber()
   @IsNotEmpty({ message: 'Preencha esta campo' })
-  number: string;
+  number: number;
 }
