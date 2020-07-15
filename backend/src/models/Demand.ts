@@ -1,14 +1,13 @@
-import { Entity, Column } from 'typeorm';
-import { IsNotEmpty, IsDateString } from 'class-validator';
+import { Entity, Column, OneToMany } from 'typeorm';
+import { IsArray } from 'class-validator';
 import Global from './Global';
 
 @Entity('demands')
 export default class Demand extends Global {
   @Column()
-  @IsDateString()
-  @IsNotEmpty()
-  date: Date;
-
-  @Column()
   total: number;
+
+  @Column('text', { array: true })
+  @IsArray()
+  foods: string[];
 }

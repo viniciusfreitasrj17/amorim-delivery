@@ -1,5 +1,5 @@
 import { Entity, Column, ManyToOne } from 'typeorm';
-import { IsNotEmpty, IsBoolean, IsNumber } from 'class-validator';
+import { IsNotEmpty, IsBoolean } from 'class-validator';
 import Global from './Global';
 import Category from './Category';
 
