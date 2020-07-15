@@ -1,6 +1,7 @@
-import { Entity, Column } from 'typeorm';
+import { Entity, Column, ManyToOne } from 'typeorm';
 import { IsNotEmpty, IsBoolean, IsNumber } from 'class-validator';
 import Global from './Global';
+import Category from './Category';
 
 @Entity('foods')
 export default class Food extends Global {
@@ -13,11 +14,9 @@ export default class Food extends Global {
   stock: boolean;
 
   @Column()
-  @IsNumber()
   @IsNotEmpty({ message: 'Preencha este campo' })
-  price: number;
+  price: string;
 
-  @Column()
-  @IsNotEmpty({ message: 'Preencha este campo' })
-  category: number;
+  @ManyToOne(type => Category, foods => Food, { eager: true })
+  category: Category;
 }
