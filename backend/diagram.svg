@@ -27,8 +27,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
-     inkscape:cx="1041.1753"
-     inkscape:cy="981.05547"
+     inkscape:cx="1429.6465"
+     inkscape:cy="1032.0668"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -183,16 +183,11 @@
            x="277.57611"
            y="774.1861"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*address: string</tspan><tspan
-           id="tspan1386"
            sodipodi:role="line"
            x="277.57611"
            y="869.10419"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*number: number</tspan><tspan
-           sodipodi:role="line"
-           x="277.57611"
-           y="964.02228"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-           id="tspan1617">*historyReq: number[]</tspan></text>
+           id="tspan1617">*number: number</tspan></text>
       <text
          id="text217"
          y="337.3335"
@@ -229,7 +224,7 @@
          y="988.64252"
          x="1412.9459"
          id="tspan1344-4"
-         sodipodi:role="line">Request</tspan></text>
+         sodipodi:role="line">Demand</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:64px;line-height:1.25;font-family:'THE AMAZING SPIDER-MAN';-inkscape-font-specification:'THE AMAZING SPIDER-MAN'"
@@ -246,30 +241,20 @@
          y="1203.2656"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
          id="tspan1654">*idCliente: string</tspan><tspan
-         id="tspan1634"
          sodipodi:role="line"
+         id="tspan1374-3"
          x="1324.2736"
          y="1298.1837"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*idFood: string[]</tspan><tspan
          sodipodi:role="line"
-         id="tspan1374-3"
          x="1324.2736"
          y="1393.1018"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*amount: number[]</tspan><tspan
-         sodipodi:role="line"
-         x="1324.2736"
-         y="1488.0199"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-         id="tspan1701">*date: Date</tspan><tspan
-         sodipodi:role="line"
-         x="1324.2736"
-         y="1582.938"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'"
-         id="tspan1703">*finished: boolean</tspan><tspan
+         id="tspan1703">*date: Date</tspan><tspan
          id="tspan1386-0"
          sodipodi:role="line"
          x="1324.2736"
-         y="1677.8562"
+         y="1488.0199"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L'">*total: number</tspan></text>
     <g
        id="g1603"

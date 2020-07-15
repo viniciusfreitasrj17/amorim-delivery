@@ -5,7 +5,7 @@ import Global from './Global';
 @Entity('foods')
 export default class Food extends Global {
   @Column()
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   name: string;
 
   @Column({ default: true })
@@ -14,10 +14,10 @@ export default class Food extends Global {
 
   @Column()
   @IsNumber()
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   price: number;
 
   @Column()
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   category: number;
 }

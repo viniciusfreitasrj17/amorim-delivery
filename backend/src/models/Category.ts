@@ -5,6 +5,6 @@ import Global from './Global';
 @Entity('categories')
 export default class Category extends Global {
   @Column({ unique: true })
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   name: string;
 }

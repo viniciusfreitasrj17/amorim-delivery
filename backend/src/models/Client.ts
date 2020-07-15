@@ -11,7 +11,7 @@ import Global from './Global';
 @Entity('clients')
 export default class Client extends Global {
   @Column()
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   name: string;
 
   @Column({ unique: true })
@@ -19,11 +19,11 @@ export default class Client extends Global {
     { allow_display_name: false },
     { message: 'Digite um e-mail válido' }
   )
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   email: string;
 
   @Column()
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   @IsAlphanumeric('pt-BR', {
     message: 'A senha deve conter letras e/ou números'
   })
@@ -31,15 +31,15 @@ export default class Client extends Global {
   password: string;
 
   @Column()
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   street: string;
 
   @Column()
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   address: string;
 
   @Column()
   @IsNumber()
-  @IsNotEmpty({ message: 'Preencha esta campo' })
+  @IsNotEmpty({ message: 'Preencha este campo' })
   number: number;
 }
