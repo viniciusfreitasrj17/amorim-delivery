@@ -1,3 +1,8 @@
+/* eslint-disable no-console */
+/* eslint-disable prefer-const */
+/* eslint-disable no-shadow */
+/* eslint-disable consistent-return */
+/* eslint-disable @typescript-eslint/no-array-constructor */
 import { Response, Request } from 'express';
 import { getRepository, getCustomRepository } from 'typeorm';
 import { validate } from 'class-validator';

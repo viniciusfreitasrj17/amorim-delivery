@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Entity, Column, ManyToOne } from 'typeorm';
 import { IsNotEmpty, IsBoolean } from 'class-validator';
 import Global from './Global';

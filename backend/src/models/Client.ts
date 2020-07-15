@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/camelcase */
 import { Entity, Column } from 'typeorm';
 import {
   IsEmail,

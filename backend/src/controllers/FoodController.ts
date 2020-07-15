@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { Response, Request } from 'express';
 import { getRepository } from 'typeorm';
 import { validate } from 'class-validator';
