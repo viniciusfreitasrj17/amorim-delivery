@@ -1,3 +1,4 @@
+/* eslint-disable no-lonely-if */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-console */
 /* eslint-disable prefer-const */
@@ -78,17 +79,29 @@ class DemandController {
         newClient.address = objClient[0].address;
         newClient.number = objClient[0].number;
 
+        console.log(objClient[0].demands);
+
         if (objClient[0].demands.length > 0) {
           const array = [];
           array.push(demand.id);
           for (let d of objClient[0].demands) {
             array.push(d);
+            console.log('d ->', d);
           }
+          console.log('demand.id ->', demand.id);
+          console.log('array ->', array);
           newClient.demands = array;
         } else {
-          const array = [];
-          array.push(demand.id);
-          newClient.demands = array;
+          if (
+            objClient[0].demands[0] === null ||
+            objClient[0].demands.length === 0
+          ) {
+            const array = [];
+            array.push(demand.id);
+            console.log('demand.id ->', demand.id);
+            console.log('array ->', array);
+            newClient.demands = array;
+          }
         }
 
         await repoClient.update(client, newClient);
