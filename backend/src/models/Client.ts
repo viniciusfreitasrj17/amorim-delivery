@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/camelcase */
 import { Entity, Column } from 'typeorm';
 import {
@@ -5,7 +6,9 @@ import {
   MinLength,
   IsNotEmpty,
   IsAlphanumeric,
-  IsNumber
+  IsNumber,
+  IsArray,
+  IsEmpty
 } from 'class-validator';
 import Global from './Global';
 
@@ -43,4 +46,7 @@ export default class Client extends Global {
   @IsNumber()
   @IsNotEmpty({ message: 'Preencha este campo' })
   number: number;
+
+  @Column('text', { array: true, default: {} })
+  demands: string[];
 }

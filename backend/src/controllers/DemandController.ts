@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 /* eslint-disable no-console */
 /* eslint-disable prefer-const */
 /* eslint-disable no-shadow */
@@ -8,6 +9,7 @@ import { getRepository, getCustomRepository } from 'typeorm';
 import { validate } from 'class-validator';
 import Demand from '../models/Demand';
 import FoodRepository from '../repositories/FoodRepository';
+import Client from '../models/Client';
 
 class DemandController {
   public async index(
@@ -50,24 +52,54 @@ class DemandController {
 
   public async store(req: Request, res: Response): Promise<Response> {
     try {
-      const { total, foods } = req.body;
+      const { total, foods, client } = req.body;
 
       const repo = getRepository(Demand);
 
       const demand = new Demand();
       demand.total = total;
       demand.foods = foods;
+      demand.client = client;
 
       const erros = await validate(demand);
 
       if (erros.length === 0) {
+        const repoClient = getRepository(Client);
+        const objClient = await repoClient.find({ where: { id: client } });
+        const newClient = new Client();
+
+        newClient.id = objClient[0].id;
+        newClient.createdAt = objClient[0].createdAt;
+        newClient.updatedAt = objClient[0].updatedAt;
+        newClient.name = objClient[0].name;
+        newClient.email = objClient[0].email;
+        newClient.password = objClient[0].password;
+        newClient.street = objClient[0].street;
+        newClient.address = objClient[0].address;
+        newClient.number = objClient[0].number;
+
+        if (objClient[0].demands.length > 0) {
+          const array = [];
+          array.push(demand.id);
+          for (let d of objClient[0].demands) {
+            array.push(d);
+          }
+          newClient.demands = array;
+        } else {
+          const array = [];
+          array.push(demand.id);
+          newClient.demands = array;
+        }
+
+        await repoClient.update(client, newClient);
+
         const data = await repo.save(demand);
         return res.status(200).json(data);
       }
 
       return res.status(400).json(erros.map(content => content.constraints));
     } catch (err) {
-      console.log(err.message);
+      console.log(err);
       return res.status(400).json({ Mensagge: 'Store Demand Failed' });
     }
   }
