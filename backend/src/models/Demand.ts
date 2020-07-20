@@ -13,7 +13,10 @@ export default class Demand extends Global {
   @IsArray()
   foods: string[];
 
-  @ManyToOne(type => Client, demand => Demand, { eager: true })
+  @ManyToOne(type => Client, demand => Demand, {
+    eager: true,
+    onDelete: 'CASCADE'
+  })
   @JoinColumn({ name: 'clientId' })
   client: Client;
 }

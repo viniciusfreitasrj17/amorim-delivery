@@ -36,6 +36,24 @@ class CategoryController {
       return res.status(400).json({ Mensagge: 'Store Category Failed' });
     }
   }
+
+  public async destroy(req: Request, res: Response): Promise<Response> {
+    try {
+      const { id } = req.params;
+      const repo = getRepository(Category);
+      const data = await repo.findOne({ where: { id } });
+
+      if (data) {
+        await repo.remove(data);
+        return res.status(200).json();
+      }
+
+      return res.status(400).json({ Mensagge: 'Not Found Category' });
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Message: 'Destroy Category Failed' });
+    }
+  }
 }
 
 export default new CategoryController();

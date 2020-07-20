@@ -51,7 +51,25 @@ class FoodController {
       return res.status(200).json(data);
     } catch (err) {
       console.log(err.message);
-      return res.status(400).json({ Mensagge: 'Index Food Failed' });
+      return res.status(400).json({ Mensagge: 'Show Food Failed' });
+    }
+  }
+
+  public async destroy(req: Request, res: Response): Promise<Response> {
+    try {
+      const { id } = req.params;
+      const repo = getRepository(Food);
+      const data = await repo.findOne({ where: { id } });
+
+      if (data) {
+        await repo.remove(data);
+        return res.status(200).json();
+      }
+
+      return res.status(400).json({ Mensagge: 'Not Found Food' });
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Destroy Food Failed' });
     }
   }
 }
