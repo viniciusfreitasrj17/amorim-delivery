@@ -20,6 +20,7 @@ routes.post('/category', CategoryController.store);
 
 // routes Demand
 routes.get('/demand', DemandController.index);
+routes.get('/demand/:id', DemandController.show);
 routes.post('/demand', DemandController.store);
 
 export default routes;

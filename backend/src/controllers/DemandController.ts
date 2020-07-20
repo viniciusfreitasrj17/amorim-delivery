@@ -111,6 +111,46 @@ class DemandController {
       return res.status(400).json({ Mensagge: 'Store Demand Failed' });
     }
   }
+
+  public async show(
+    req: Request,
+    res: Response
+  ): Promise<Response | undefined> {
+    try {
+      const { id } = req.params;
+      const repo = getRepository(Demand);
+      const data = await repo.findOne({ where: { id } });
+
+      let demand = {};
+
+      if (data) {
+        demand = {
+          id: data.id,
+          total: data.total,
+          client: data.client,
+          createdAt: data.createdAt,
+          updatedAt: data.updatedAt,
+          foods: await Promise.all(
+            data.foods.map(async (idFood: string) => {
+              let repo = getCustomRepository(FoodRepository);
+              let [Food] = await repo.findByFoodId(idFood);
+
+              return Food;
+            })
+          )
+            .then(res => res)
+            .catch(err => console.log('Promisse.all Foods Erro ->', err))
+        };
+      } else {
+        return res.status(400).json({ Mensagge: 'Not Found Demand' });
+      }
+
+      return res.status(200).json(demand);
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Get Demand Failed' });
+    }
+  }
 }
 
 export default new DemandController();
