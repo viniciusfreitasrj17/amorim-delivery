@@ -8,10 +8,12 @@ const routes = Router();
 
 // routes Client
 routes.get('/client', ClientController.index);
+routes.get('/client/:id', ClientController.show);
 routes.post('/client', ClientController.store);
 
 // routes Food
 routes.get('/food', FoodController.index);
+routes.get('/food/:id', FoodController.show);
 routes.post('/food', FoodController.store);
 
 // routes Category

@@ -48,7 +48,7 @@ class DemandController {
         .catch(err => console.log('Promisse.all Mount Object Erro ->', err));
     } catch (err) {
       console.log(err.message);
-      return res.status(400).json({ Mensagge: 'Get Demand Failed' });
+      return res.status(400).json({ Mensagge: 'Index Demand Failed' });
     }
   }
 
@@ -148,7 +148,7 @@ class DemandController {
       return res.status(200).json(demand);
     } catch (err) {
       console.log(err.message);
-      return res.status(400).json({ Mensagge: 'Get Demand Failed' });
+      return res.status(400).json({ Mensagge: 'Show Demand Failed' });
     }
   }
 }

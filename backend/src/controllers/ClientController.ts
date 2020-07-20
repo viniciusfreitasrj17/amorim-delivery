@@ -13,7 +13,7 @@ class ClientController {
       return res.status(200).json(data);
     } catch (err) {
       console.log(err.message);
-      return res.status(400).json({ Mensagge: 'Get Client Failed' });
+      return res.status(400).json({ Mensagge: 'Index Client Failed' });
     }
   }
 
@@ -41,6 +41,19 @@ class ClientController {
     } catch (err) {
       console.log(err.message);
       return res.status(400).json({ Mensagge: 'Store Client Failed' });
+    }
+  }
+
+  public async show(req: Request, res: Response): Promise<Response> {
+    try {
+      const { id } = req.params;
+      const repo = getRepository(Client);
+      const data = await repo.findOne({ where: { id } });
+
+      return res.status(200).json(data);
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Show Client Failed' });
     }
   }
 }
