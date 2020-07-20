@@ -50,11 +50,11 @@ class ClientController {
       const repo = getRepository(Client);
       const data = await repo.findOne({ where: { id } });
 
-      if (data) {
-        return res.status(200).json(data);
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Client' });
       }
 
-      return res.status(400).json({ Mensagge: 'Not Found Client' });
+      return res.status(200).json(data);
     } catch (err) {
       console.log(err.message);
       return res.status(400).json({ Mensagge: 'Show Client Failed' });
@@ -67,15 +67,45 @@ class ClientController {
       const repo = getRepository(Client);
       const data = await repo.findOne({ where: { id } });
 
-      if (data) {
-        await repo.remove(data);
-        return res.status(200).json();
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Client' });
       }
 
-      return res.status(400).json({ Mensagge: 'Not Found Client' });
+      await repo.remove(data);
+      return res.status(200).json();
     } catch (err) {
       console.log(err.message);
       return res.status(400).json({ Mensagge: 'Destroy Client Failed' });
+    }
+  }
+
+  public async update(req: Request, res: Response): Promise<Response> {
+    try {
+      const { id } = req.params;
+      const { name, email, password, street, address, number } = req.body;
+      const repo = getRepository(Client);
+      const data = await repo.findOne({ where: { id } });
+
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Client' });
+      }
+
+      const newClient = repo.create({
+        name: name || data.name,
+        email: email || data.email,
+        password: password || data.password,
+        street: street || data.street,
+        address: address || data.address,
+        number: number || data.number,
+        demand: data.demand,
+        demands: data.demands
+      });
+
+      await repo.update(id, newClient);
+      return res.status(200).json();
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Update Client Failed' });
     }
   }
 }

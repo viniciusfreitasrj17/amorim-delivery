@@ -43,15 +43,37 @@ class CategoryController {
       const repo = getRepository(Category);
       const data = await repo.findOne({ where: { id } });
 
-      if (data) {
-        await repo.remove(data);
-        return res.status(200).json();
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Category' });
       }
-
-      return res.status(400).json({ Mensagge: 'Not Found Category' });
+      await repo.remove(data);
+      return res.status(200).json();
     } catch (err) {
       console.log(err.message);
       return res.status(400).json({ Message: 'Destroy Category Failed' });
+    }
+  }
+
+  public async update(req: Request, res: Response): Promise<Response> {
+    try {
+      const { id } = req.params;
+      const { name } = req.body;
+      const repo = getRepository(Category);
+      const data = await repo.findOne({ where: { id } });
+
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Category' });
+      }
+
+      const newCategory = repo.create({
+        name: name || data.name
+      });
+
+      await repo.update(id, newCategory);
+      return res.status(200).json();
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Message: 'Update Category Failed' });
     }
   }
 }

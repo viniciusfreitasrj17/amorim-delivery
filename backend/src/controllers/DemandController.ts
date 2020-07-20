@@ -121,34 +121,85 @@ class DemandController {
       const repo = getRepository(Demand);
       const data = await repo.findOne({ where: { id } });
 
-      let demand = {};
-
-      if (data) {
-        demand = {
-          id: data.id,
-          total: data.total,
-          client: data.client,
-          createdAt: data.createdAt,
-          updatedAt: data.updatedAt,
-          foods: await Promise.all(
-            data.foods.map(async (idFood: string) => {
-              let repo = getCustomRepository(FoodRepository);
-              let [Food] = await repo.findByFoodId(idFood);
-
-              return Food;
-            })
-          )
-            .then(res => res)
-            .catch(err => console.log('Promisse.all Foods Erro ->', err))
-        };
-      } else {
+      if (!data) {
         return res.status(400).json({ Mensagge: 'Not Found Demand' });
       }
+
+      const demand = {
+        id: data.id,
+        total: data.total,
+        client: data.client,
+        createdAt: data.createdAt,
+        updatedAt: data.updatedAt,
+        foods: await Promise.all(
+          data.foods.map(async (idFood: string) => {
+            let repo = getCustomRepository(FoodRepository);
+            let [Food] = await repo.findByFoodId(idFood);
+
+            return Food;
+          })
+        )
+          .then(res => res)
+          .catch(err => console.log('Promisse.all Foods Erro ->', err))
+      };
 
       return res.status(200).json(demand);
     } catch (err) {
       console.log(err.message);
       return res.status(400).json({ Mensagge: 'Show Demand Failed' });
+    }
+  }
+
+  public async destroy(req: Request, res: Response): Promise<Response> {
+    try {
+      const { id } = req.params;
+      const repo = getRepository(Demand);
+      const data = await repo.findOne({ where: { id } });
+
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Demand' });
+      }
+
+      const repoClient = getRepository(Client);
+      const objClient = await repoClient.find({
+        where: { id: data.client.id }
+      });
+
+      const newClient = new Client();
+      newClient.demands = objClient[0].demands.filter(
+        demandId => demandId !== data.id
+      );
+
+      await repoClient.update(objClient[0].id, newClient);
+      await repo.remove(data);
+      return res.status(200).json();
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Destroy Demand Failed' });
+    }
+  }
+
+  public async update(req: Request, res: Response): Promise<Response> {
+    try {
+      const { id } = req.params;
+      const { total, foods } = req.body;
+      const repo = getRepository(Demand);
+      const data = await repo.findOne({ where: { id } });
+
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Demand' });
+      }
+
+      const newDemand = repo.create({
+        total: total || data.total,
+        foods: foods || data.foods
+      });
+
+      await repo.update(id, newDemand);
+      return res.status(200).json();
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Update Demand Failed' });
     }
   }
 }

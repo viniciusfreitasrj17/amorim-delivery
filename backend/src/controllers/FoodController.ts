@@ -48,6 +48,10 @@ class FoodController {
       const repo = getRepository(Food);
       const data = await repo.findOne({ where: { id } });
 
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Food' });
+      }
+
       return res.status(200).json(data);
     } catch (err) {
       console.log(err.message);
@@ -61,15 +65,41 @@ class FoodController {
       const repo = getRepository(Food);
       const data = await repo.findOne({ where: { id } });
 
-      if (data) {
-        await repo.remove(data);
-        return res.status(200).json();
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Food' });
       }
 
-      return res.status(400).json({ Mensagge: 'Not Found Food' });
+      await repo.remove(data);
+      return res.status(200).json();
     } catch (err) {
       console.log(err.message);
       return res.status(400).json({ Mensagge: 'Destroy Food Failed' });
+    }
+  }
+
+  public async update(req: Request, res: Response): Promise<Response> {
+    try {
+      const { id } = req.params;
+      const { name, price, stock, category } = req.body;
+      const repo = getRepository(Food);
+      const data = await repo.findOne({ where: { id } });
+
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Food' });
+      }
+
+      const newFood = repo.create({
+        name: name || data.name,
+        price: price || data.price,
+        stock: stock !== undefined ? stock : data.stock,
+        category: category || data.category
+      });
+
+      await repo.update(id, newFood);
+      return res.status(200).json();
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Update Food Failed' });
     }
   }
 }
