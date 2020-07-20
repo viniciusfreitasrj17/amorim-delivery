@@ -1,16 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/camelcase */
-import { Entity, Column } from 'typeorm';
+import { Entity, Column, OneToMany } from 'typeorm';
 import {
   IsEmail,
   MinLength,
   IsNotEmpty,
   IsAlphanumeric,
-  IsNumber,
-  IsArray,
-  IsEmpty
+  IsNumber
 } from 'class-validator';
 import Global from './Global';
+import Demand from './Demand';
 
 @Entity('clients')
 export default class Client extends Global {
@@ -47,6 +46,11 @@ export default class Client extends Global {
   @IsNotEmpty({ message: 'Preencha este campo' })
   number: number;
 
+  // Array List Demands
   @Column('text', { array: true, default: {} })
   demands: string[];
+
+  // Foreign Key from Relation Demand Client
+  @OneToMany(type => Demand, client => Client)
+  demand: Demand[];
 }

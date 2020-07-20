@@ -28,6 +28,7 @@ class DemandController {
           demandList.push({
             id: demand.id,
             total: demand.total,
+            client: demand.client,
             createdAt: demand.createdAt,
             updatedAt: demand.updatedAt,
             foods: await Promise.all(
@@ -79,17 +80,14 @@ class DemandController {
         newClient.address = objClient[0].address;
         newClient.number = objClient[0].number;
 
-        console.log(objClient[0].demands);
+        const data = await repo.save(demand);
 
         if (objClient[0].demands.length > 0) {
           const array = [];
-          array.push(demand.id);
+          array.push(data.id);
           for (let d of objClient[0].demands) {
             array.push(d);
-            console.log('d ->', d);
           }
-          console.log('demand.id ->', demand.id);
-          console.log('array ->', array);
           newClient.demands = array;
         } else {
           if (
@@ -97,16 +95,13 @@ class DemandController {
             objClient[0].demands.length === 0
           ) {
             const array = [];
-            array.push(demand.id);
-            console.log('demand.id ->', demand.id);
-            console.log('array ->', array);
+            array.push(data.id);
             newClient.demands = array;
           }
         }
 
         await repoClient.update(client, newClient);
 
-        const data = await repo.save(demand);
         return res.status(200).json(data);
       }
 

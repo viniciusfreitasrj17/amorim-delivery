@@ -13,7 +13,7 @@ export default class Demand extends Global {
   @IsArray()
   foods: string[];
 
-  @ManyToOne(type => Client, { eager: true })
-  @JoinColumn()
+  @ManyToOne(type => Client, demand => Demand, { eager: true })
+  @JoinColumn({ name: 'clientId' })
   client: Client;
 }
