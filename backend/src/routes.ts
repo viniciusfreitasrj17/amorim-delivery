@@ -12,6 +12,7 @@ routes.get('/client/:id', ClientController.show);
 routes.post('/client', ClientController.store);
 routes.delete('/client/:id', ClientController.destroy);
 routes.put('/client/:id', ClientController.update);
+routes.post('/client/auth', ClientController.auth);
 
 // routes Food
 routes.get('/food', FoodController.index);
