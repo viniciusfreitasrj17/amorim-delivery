@@ -10,6 +10,8 @@ import Client from '../models/Client';
 import { generateToken } from '../utils/generateToken';
 import mailer from '../services/mailer';
 
+const BCRYPT_HASH_ROUND = 10;
+
 class ClientController {
   public async index(req: Request, res: Response): Promise<Response> {
     try {
@@ -38,17 +40,20 @@ class ClientController {
       });
       const erros = await validate(client);
 
-      if (erros.length === 0) {
-        const data = await repo.save(client);
-        delete data.password;
-        delete data.passwordResetExpires;
-        delete data.passwordResetToken;
-        return res
-          .status(200)
-          .json({ data, token: generateToken({ id: data.id }) });
+      if (erros.length !== 0) {
+        return res.status(400).json(erros.map(content => content.constraints));
       }
 
-      return res.status(400).json(erros.map(content => content.constraints));
+      client.password = await bcrypt.hash(client.password, BCRYPT_HASH_ROUND);
+
+      const data = await repo.save(client);
+      delete data.password;
+      delete data.passwordResetExpires;
+      delete data.passwordResetToken;
+
+      return res
+        .status(200)
+        .json({ data, token: generateToken({ id: data.id }) });
     } catch (err) {
       console.log(err.message);
       return res.status(400).json({ Mensagge: 'Store Client Failed' });
@@ -164,10 +169,7 @@ class ClientController {
     }
   }
 
-  public async forgotPassword(
-    req: Request,
-    res: Response
-  ): Promise<Response | undefined> {
+  public async forgotPassword(req: Request, res: Response): Promise<Response> {
     try {
       const { email } = req.body;
 
@@ -184,7 +186,7 @@ class ClientController {
       const token = crypto.randomBytes(20).toString('hex');
 
       const now = new Date();
-      now.setHours(now.getHours() + 1); // 1 Day fot expired
+      now.setHours(now.getHours() + 1); // 1 Hour fot expired
 
       await repo.update(client.id, {
         passwordResetToken: token,
@@ -206,12 +208,86 @@ class ClientController {
               .status(400)
               .json({ Error: 'Cannot send forgot password email' });
           }
-          return res.status(200).json({ Message: 'E-mail Sended' });
         }
       );
+      return res.status(200).json({ Message: 'E-mail Sended' });
     } catch (err) {
       console.log(err);
       return res.status(400).json({ Mensagge: 'ForgotPassword Client Failed' });
+    }
+  }
+
+  public async resetPassword(req: Request, res: Response): Promise<Response> {
+    try {
+      const { email, token } = req.body;
+      let { password } = req.body;
+
+      const repo = getRepository(Client);
+
+      const client = await repo.findOne({
+        where: { email },
+        select: [
+          'id',
+          'name',
+          'email',
+          'password',
+          'street',
+          'address',
+          'number',
+          'createdAt',
+          'updatedAt',
+          'passwordResetExpires',
+          'passwordResetToken'
+        ]
+      });
+
+      if (!client) {
+        return res.status(400).json({ Error: 'User not found' });
+      }
+
+      if (token !== client.passwordResetToken) {
+        return res.status(400).json({ Error: 'Token invalid' });
+      }
+
+      const now = new Date();
+
+      if (now > client.passwordResetExpires) {
+        return res
+          .status(400)
+          .json({ Error: 'Token expired, generate a new one' });
+      }
+
+      if (password !== String) {
+        password = password.toString();
+      }
+
+      const newClient = repo.create({
+        ...client,
+        password
+      });
+
+      const erros = await validate(newClient);
+
+      if (erros.length !== 0) {
+        return res.status(400).json(erros.map(content => content.constraints));
+      }
+
+      delete newClient.passwordResetExpires;
+      delete newClient.passwordResetToken;
+      delete newClient.createdAt;
+      delete newClient.updatedAt;
+
+      newClient.password = await bcrypt.hash(
+        newClient.password,
+        BCRYPT_HASH_ROUND
+      );
+
+      await repo.update(client.id, newClient);
+
+      return res.status(200).json({ Message: 'New Password Modificad' });
+    } catch (err) {
+      console.log(err);
+      return res.status(400).json({ Mensagge: 'Reset Password Client Failed' });
     }
   }
 }

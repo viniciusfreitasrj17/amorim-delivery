@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/camelcase */
-import { Entity, Column, OneToMany, BeforeInsert } from 'typeorm';
+import { Entity, Column, OneToMany } from 'typeorm';
 import {
   IsEmail,
   MinLength,
@@ -11,8 +11,6 @@ import {
 import * as bcrypt from 'bcryptjs';
 import Global from './Global';
 import Demand from './Demand';
-
-const BCRYPT_HASH_ROUND = 10;
 
 @Entity('clients')
 export default class Client extends Global {
@@ -62,9 +60,4 @@ export default class Client extends Global {
   // Foreign Key from Relation Demand Client
   @OneToMany(type => Demand, client => Client)
   demand: Demand[];
-
-  @BeforeInsert()
-  async pre(): Promise<void> {
-    this.password = await bcrypt.hash(this.password, BCRYPT_HASH_ROUND);
-  }
 }

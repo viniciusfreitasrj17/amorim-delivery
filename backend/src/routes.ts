@@ -14,6 +14,7 @@ routes.delete('/client/:id', ClientController.destroy);
 routes.put('/client/:id', ClientController.update);
 routes.post('/client/auth', ClientController.auth);
 routes.post('/client/forgotPassword', ClientController.forgotPassword);
+routes.post('/client/resetPassword', ClientController.resetPassword);
 
 // routes Food
 routes.get('/food', FoodController.index);
