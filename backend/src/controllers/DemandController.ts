@@ -70,15 +70,7 @@ class DemandController {
         const objClient = await repoClient.find({ where: { id: client } });
         const newClient = new Client();
 
-        newClient.id = objClient[0].id;
-        newClient.createdAt = objClient[0].createdAt;
         newClient.updatedAt = objClient[0].updatedAt;
-        newClient.name = objClient[0].name;
-        newClient.email = objClient[0].email;
-        newClient.password = objClient[0].password;
-        newClient.street = objClient[0].street;
-        newClient.address = objClient[0].address;
-        newClient.number = objClient[0].number;
 
         const data = await repo.save(demand);
 

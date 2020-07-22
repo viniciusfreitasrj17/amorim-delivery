@@ -8,7 +8,6 @@ import {
   IsAlphanumeric,
   IsNumber
 } from 'class-validator';
-import * as bcrypt from 'bcryptjs';
 import Global from './Global';
 import Demand from './Demand';
 
