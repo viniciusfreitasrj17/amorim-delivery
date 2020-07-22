@@ -31,16 +31,23 @@ routes.post('/category', CategoryController.store);
 routes.delete('/category/:id', CategoryController.destroy);
 routes.put('/category/:id', CategoryController.update);
 
-// routes Demand
+// routes Demand to Admin
+routes.get('/demandAdmin', DemandController.index);
+routes.get('/demandAdmin/:id', DemandController.show);
+routes.post('/demandAdmin', DemandController.store);
+routes.delete('/demandAdmin/:id', DemandController.destroy);
+routes.put('/demandAdmin/:id', DemandController.update);
+
+// routes Demand to Client
 // @ts-ignorets
-routes.get('/demand', authMiddleware, DemandController.index);
+routes.get('/demand/:client', authMiddleware, DemandController.indexToClient);
+// // @ts-ignorets
+// routes.get('/demand/:id', authMiddleware, DemandController.show);
 // @ts-ignorets
-routes.get('/demand/:id', authMiddleware, DemandController.show);
+routes.post('/demand/:client', authMiddleware, DemandController.storeToClient);
 // @ts-ignorets
-routes.post('/demand', authMiddleware, DemandController.store);
-// @ts-ignorets
-routes.delete('/demand/:id', authMiddleware, DemandController.destroy);
-// @ts-ignorets
-routes.put('/demand/:id', authMiddleware, DemandController.update);
+// routes.delete('/demand/:id', authMiddleware, DemandController.destroy);
+// // @ts-ignorets
+// routes.put('/demand/:id', authMiddleware, DemandController.update);
 
 export default routes;

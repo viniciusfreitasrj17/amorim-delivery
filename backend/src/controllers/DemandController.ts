@@ -1,3 +1,5 @@
+/* eslint-disable prefer-destructuring */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-lonely-if */
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable no-console */
@@ -192,6 +194,108 @@ class DemandController {
     } catch (err) {
       console.log(err.message);
       return res.status(400).json({ Mensagge: 'Update Demand Failed' });
+    }
+  }
+
+  public async storeToClient(req: Request, res: Response): Promise<Response> {
+    try {
+      const { total, foods } = req.body;
+      const client: any = req.params.client;
+
+      const repo = getRepository(Demand);
+
+      const demand = new Demand();
+      demand.total = total;
+      demand.foods = foods;
+      demand.client = client;
+
+      const erros = await validate(demand);
+
+      if (erros.length === 0) {
+        const repoClient = getRepository(Client);
+        const objClient = await repoClient.find({ where: { id: client } });
+        const newClient = new Client();
+
+        newClient.updatedAt = objClient[0].updatedAt;
+
+        const data = await repo.save(demand);
+
+        if (objClient[0].demands.length > 0) {
+          const array = [];
+          array.push(data.id);
+          for (let d of objClient[0].demands) {
+            array.push(d);
+          }
+          newClient.demands = array;
+        } else {
+          if (
+            objClient[0].demands[0] === null ||
+            objClient[0].demands.length === 0
+          ) {
+            const array = [];
+            array.push(data.id);
+            newClient.demands = array;
+          }
+        }
+
+        await repoClient.update(client, newClient);
+
+        return res.status(200).json(data);
+      }
+
+      return res.status(400).json(erros.map(content => content.constraints));
+    } catch (err) {
+      console.log(err);
+      return res.status(400).json({ Mensagge: 'Store Demand Failed' });
+    }
+  }
+
+  public async indexToClient(
+    req: Request,
+    res: Response
+  ): Promise<Response | undefined> {
+    try {
+      const { client } = req.params;
+
+      const repo = getRepository(Demand);
+      const data = await repo.find();
+
+      const demandOwner = data.filter(demand => demand.client.id === client);
+
+      if (demandOwner.length === 0) {
+        return res
+          .status(400)
+          .json({ Message: 'Not Found Demand for this Client' });
+      }
+
+      const demandList = new Array();
+
+      Promise.all(
+        demandOwner.map(async demand => {
+          demandList.push({
+            id: demand.id,
+            total: demand.total,
+            client: demand.client,
+            createdAt: demand.createdAt,
+            updatedAt: demand.updatedAt,
+            foods: await Promise.all(
+              demand.foods.map(async (idFood: string) => {
+                let repo = getCustomRepository(FoodRepository);
+                let [Food] = await repo.findByFoodId(idFood);
+
+                return Food;
+              })
+            )
+              .then(res => res)
+              .catch(err => console.log('Promisse.all Foods Erro ->', err))
+          });
+        })
+      )
+        .then(() => res.status(200).json(demandList))
+        .catch(err => console.log('Promisse.all Mount Object Erro ->', err));
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Index Demand Failed' });
     }
   }
 }
