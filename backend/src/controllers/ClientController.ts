@@ -1,10 +1,14 @@
+/* eslint-disable @typescript-eslint/ban-ts-ignore */
+/* eslint-disable consistent-return */
 /* eslint-disable no-console */
 import { Response, Request } from 'express';
 import { getRepository } from 'typeorm';
 import { validate } from 'class-validator';
 import * as bcrypt from 'bcryptjs';
+import crypto from 'crypto';
 import Client from '../models/Client';
 import { generateToken } from '../utils/generateToken';
+import mailer from '../services/mailer';
 
 class ClientController {
   public async index(req: Request, res: Response): Promise<Response> {
@@ -155,8 +159,59 @@ class ClientController {
         .status(200)
         .json({ client, token: generateToken({ id: client.id }) });
     } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Auth Client Failed' });
+    }
+  }
+
+  public async forgotPassword(
+    req: Request,
+    res: Response
+  ): Promise<Response | undefined> {
+    try {
+      const { email } = req.body;
+
+      const repo = getRepository(Client);
+
+      const client = await repo.findOne({
+        where: { email }
+      });
+
+      if (!client) {
+        return res.status(400).json({ Error: 'User not found' });
+      }
+
+      const token = crypto.randomBytes(20).toString('hex');
+
+      const now = new Date();
+      now.setHours(now.getHours() + 1); // 1 Day fot expired
+
+      await repo.update(client.id, {
+        passwordResetToken: token,
+        passwordResetExpires: now
+      });
+
+      mailer.sendMail(
+        {
+          from: 'viniciusfreitasrj17@gmail.com',
+          to: email,
+          // @ts-ignore
+          template: 'forgotPassword',
+          context: { token }
+        },
+        err => {
+          if (err) {
+            console.log(err);
+            return res
+              .status(400)
+              .json({ Error: 'Cannot send forgot password email' });
+          }
+          return res.status(200).json({ Message: 'E-mail Sended' });
+        }
+      );
+    } catch (err) {
       console.log(err);
-      return res.status(400).json({ Mensagge: 'Store Client Failed' });
+      return res.status(400).json({ Mensagge: 'ForgotPassword Client Failed' });
     }
   }
 }

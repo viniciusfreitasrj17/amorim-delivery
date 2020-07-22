@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/camelcase */
-import { Entity, Column, OneToMany, BeforeInsert, BeforeUpdate } from 'typeorm';
+import { Entity, Column, OneToMany, BeforeInsert } from 'typeorm';
 import {
   IsEmail,
   MinLength,
