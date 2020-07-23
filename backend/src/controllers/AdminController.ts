@@ -16,7 +16,14 @@ const BCRYPT_HASH_ROUND = 10;
 class AdminController {
   public async index(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const { userId } = req;
       const repo = getRepository(Admin);
+      const adminVerify = await repo.findOne({ where: { id: userId } });
+      if (!adminVerify?.master) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const data = await repo.find();
 
       return res.status(200).json(data);
@@ -28,11 +35,15 @@ class AdminController {
 
   public async store(req: Request, res: Response): Promise<Response> {
     try {
-      const { name, email, password, master } = req.body;
       // @ts-ignore
       const { userId } = req;
-      console.log(userId);
       const repo = getRepository(Admin);
+      const adminVerify = await repo.findOne({ where: { id: userId } });
+      if (!adminVerify?.master) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
+      const { name, email, password, master } = req.body;
 
       if (await repo.findOne({ where: { email } })) {
         return res
@@ -41,7 +52,7 @@ class AdminController {
       }
 
       if (master) {
-        const adminMaster = repo.findOne({ where: { master: true } });
+        const adminMaster = await repo.findOne({ where: { master: true } });
         if (adminMaster) {
           return res
             .status(400)
@@ -82,8 +93,15 @@ class AdminController {
 
   public async show(req: Request, res: Response): Promise<Response> {
     try {
-      const { id } = req.params;
+      // @ts-ignore
+      const { userId } = req;
       const repo = getRepository(Admin);
+      const adminVerify = await repo.findOne({ where: { id: userId } });
+      if (!adminVerify?.master) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
+      const { id } = req.params;
       const data = await repo.findOne({ where: { id } });
 
       if (!data) {
@@ -99,8 +117,15 @@ class AdminController {
 
   public async destroy(req: Request, res: Response): Promise<Response> {
     try {
-      const { id } = req.params;
+      // @ts-ignore
+      const { userId } = req;
       const repo = getRepository(Admin);
+      const adminVerify = await repo.findOne({ where: { id: userId } });
+      if (!adminVerify?.master) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
+      const { id } = req.params;
       const data = await repo.findOne({ where: { id } });
 
       if (!data) {
@@ -117,9 +142,16 @@ class AdminController {
 
   public async update(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const { userId } = req;
+      const repo = getRepository(Admin);
+      const adminVerify = await repo.findOne({ where: { id: userId } });
+      if (!adminVerify?.master) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const { name, email, password, master } = req.body;
-      const repo = getRepository(Admin);
 
       if (email) {
         if (await repo.findOne({ where: { email } })) {

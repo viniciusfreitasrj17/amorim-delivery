@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-ignore */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-lonely-if */
@@ -199,9 +200,10 @@ class DemandController {
 
   public async storeToClient(req: Request, res: Response): Promise<Response> {
     try {
-      const { total, foods } = req.body;
-      const client: any = req.params.client;
+      // @ts-ignore
+      const client = req.userId;
 
+      const { total, foods } = req.body;
       const repo = getRepository(Demand);
 
       const demand = new Demand();
@@ -255,7 +257,8 @@ class DemandController {
     res: Response
   ): Promise<Response | undefined> {
     try {
-      const { client } = req.params;
+      // @ts-ignore
+      const client = req.userId;
 
       const repo = getRepository(Demand);
       const data = await repo.find();

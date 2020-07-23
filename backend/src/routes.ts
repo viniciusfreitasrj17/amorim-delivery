@@ -41,9 +41,9 @@ routes.put('/demandAdmin/:id', DemandController.update);
 
 // routes Demand to Client
 // @ts-ignorets
-routes.get('/demand/:client', authMiddleware, DemandController.indexToClient);
+routes.get('/demand', authMiddleware, DemandController.indexToClient);
 // @ts-ignorets
-routes.post('/demand/:client', authMiddleware, DemandController.storeToClient);
+routes.post('/demand', authMiddleware, DemandController.storeToClient);
 
 // routes Admin Master
 // @ts-ignorets
