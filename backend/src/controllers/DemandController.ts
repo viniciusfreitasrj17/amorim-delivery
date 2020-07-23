@@ -298,7 +298,7 @@ class DemandController {
 
       if (demandOwner.length === 0) {
         return res
-          .status(400)
+          .status(200)
           .json({ Message: 'Not Found Demand for this Client' });
       }
 

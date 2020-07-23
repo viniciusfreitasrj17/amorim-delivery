@@ -11,71 +11,77 @@ const routes = Router();
 
 // routes Client
 // @ts-ignore
-routes.get('/client', authMiddleware, ClientController.index); // Admin
+routes.get('/clientAdmin', authMiddleware, ClientController.index); // Admin 👌
 // @ts-ignore
-routes.get('/client/:id', authMiddleware, ClientController.show); // Admin
-routes.post('/client', ClientController.store);
+routes.get('/clientAdmin/:id', authMiddleware, ClientController.show); // Admin 👌
 // @ts-ignore
-routes.delete('/client', authMiddleware, ClientController.destroy); // Client
+routes.post('/clientAdmin', authMiddleware, ClientController.store); // Admin 👌
 // @ts-ignore
-routes.put('/client', authMiddleware, ClientController.update); // Client
-routes.post('/client/auth', ClientController.auth);
-routes.post('/client/forgotPassword', ClientController.forgotPassword);
-routes.post('/client/resetPassword', ClientController.resetPassword);
+routes.delete('/clientAdmin/:id', authMiddleware, ClientController.destroy); // Admin 👌
+// @ts-ignore
+routes.put('/clientAdmin/:id', authMiddleware, ClientController.update); // Admin 👌
+// @ts-ignore
+routes.get('/client', authMiddleware, ClientController.showToClient); // Client 👌
+// @ts-ignore
+routes.delete('/client', authMiddleware, ClientController.destroyToClient); // Client 👌
+// @ts-ignore
+routes.put('/client', authMiddleware, ClientController.updateToClient); // Client 👌
+routes.post('/client', ClientController.storeToClient); // 👌
+routes.post('/client/auth', ClientController.auth); // 👌
+routes.post('/client/forgotPassword', ClientController.forgotPassword); // 👌
+routes.post('/client/resetPassword', ClientController.resetPassword); // 👌
 
 // routes Food
 // @ts-ignore
-routes.get('/food', authMiddleware, FoodController.index); // Admin
+routes.get('/food', authMiddleware, FoodController.index); // Admin 👌
 // @ts-ignore
-routes.get('/food/:id', authMiddleware, FoodController.show); // Admin
+routes.get('/food/:id', authMiddleware, FoodController.show); // Admin 👌
 // @ts-ignore
-routes.post('/food', authMiddleware, FoodController.store); // Admin
+routes.post('/food', authMiddleware, FoodController.store); // Admin 👌
 // @ts-ignore
-routes.delete('/food/:id', authMiddleware, FoodController.destroy); // Admin
+routes.delete('/food/:id', authMiddleware, FoodController.destroy); // Admin 👌
 // @ts-ignore
-routes.put('/food/:id', authMiddleware, FoodController.update); // Admin
+routes.put('/food/:id', authMiddleware, FoodController.update); // Admin 👌
 
 // routes Category
 // @ts-ignore
-routes.get('/category', authMiddleware, CategoryController.index); // Admin
+routes.get('/category', authMiddleware, CategoryController.index); // Admin 👌
 // @ts-ignore
-routes.post('/category', authMiddleware, CategoryController.store); // Admin
+routes.post('/category', authMiddleware, CategoryController.store); // Admin 👌
 // @ts-ignore
-routes.delete('/category/:id', authMiddleware, CategoryController.destroy); // Admin
+routes.delete('/category/:id', authMiddleware, CategoryController.destroy); // Admin 👌
 // @ts-ignore
-routes.put('/category/:id', authMiddleware, CategoryController.update); // Admin
+routes.put('/category/:id', authMiddleware, CategoryController.update); // Admin 👌
 
-// routes Demand to Admin
+// routes Demand
 // @ts-ignore
-routes.get('/demandAdmin', authMiddleware, DemandController.index); // Admin
+routes.get('/demandAdmin', authMiddleware, DemandController.index); // Admin 👌
 // @ts-ignore
-routes.get('/demandAdmin/:id', authMiddleware, DemandController.show); // Admin
+routes.get('/demandAdmin/:id', authMiddleware, DemandController.show); // Admin 👌
 // @ts-ignore
-routes.post('/demandAdmin', authMiddleware, DemandController.store); // Admin
+routes.post('/demandAdmin', authMiddleware, DemandController.store); // Admin 👌
 // @ts-ignore
-routes.delete('/demandAdmin/:id', authMiddleware, DemandController.destroy); // Admin
+routes.delete('/demandAdmin/:id', authMiddleware, DemandController.destroy); // Admin 👌
 // @ts-ignore
-routes.put('/demandAdmin/:id', authMiddleware, DemandController.update); // Admin
-
-// routes Demand to Client
+routes.put('/demandAdmin/:id', authMiddleware, DemandController.update); // Admin 👌
 // @ts-ignorets
-routes.get('/demand', authMiddleware, DemandController.indexToClient); // Client
+routes.get('/demand', authMiddleware, DemandController.indexToClient); // Client 👌
 // @ts-ignorets
-routes.post('/demand', authMiddleware, DemandController.storeToClient); // Client
+routes.post('/demand', authMiddleware, DemandController.storeToClient); // Client 👌
 
 // routes Admin Master
 // @ts-ignorets
-routes.get('/admin', authMiddleware, AdminController.index); // Admin Master
+routes.get('/admin', authMiddleware, AdminController.index); // Admin Master 👌
 // @ts-ignorets
-routes.get('/admin/:id', authMiddleware, AdminController.show); // Admin Master
+routes.get('/admin/:id', authMiddleware, AdminController.show); // Admin Master 👌
 // @ts-ignorets
-routes.post('/admin', authMiddleware, AdminController.store); // Admin Master
+routes.post('/admin', authMiddleware, AdminController.store); // Admin Master 👌
 // @ts-ignorets
-routes.delete('/admin/:id', authMiddleware, AdminController.destroy); // Admin Master
+routes.delete('/admin/:id', authMiddleware, AdminController.destroy); // Admin Master 👌
 // @ts-ignorets
-routes.put('/admin/:id', authMiddleware, AdminController.update); // Admin Master
-routes.post('/admin/auth', AdminController.auth);
-routes.post('/admin/forgotPassword', AdminController.forgotPassword);
-routes.post('/admin/resetPassword', AdminController.resetPassword);
+routes.put('/admin/:id', authMiddleware, AdminController.update); // Admin Master 👌
+routes.post('/admin/auth', AdminController.auth); // 👌
+routes.post('/admin/forgotPassword', AdminController.forgotPassword); // 👌
+routes.post('/admin/resetPassword', AdminController.resetPassword); // 👌
 
 export default routes;

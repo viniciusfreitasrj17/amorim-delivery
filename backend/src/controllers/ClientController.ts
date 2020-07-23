@@ -34,6 +34,12 @@ class ClientController {
 
   public async store(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { name, email, password, street, address, number } = req.body;
       const repo = getRepository(Client);
 
@@ -99,7 +105,13 @@ class ClientController {
   public async destroy(req: Request, res: Response): Promise<Response> {
     try {
       // @ts-ignore
-      const id = req.userId;
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
+      // @ts-ignore
+      const { id } = req.params;
       const repo = getRepository(Client);
       const data = await repo.findOne({ where: { id } });
 
@@ -118,7 +130,13 @@ class ClientController {
   public async update(req: Request, res: Response): Promise<Response> {
     try {
       // @ts-ignore
-      const id = req.userId;
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
+      // @ts-ignore
+      const { id } = req.params;
       const { name, email, password, street, address, number } = req.body;
       const repo = getRepository(Client);
 
@@ -318,6 +336,124 @@ class ClientController {
     } catch (err) {
       console.log(err);
       return res.status(400).json({ Mensagge: 'Reset Password Client Failed' });
+    }
+  }
+
+  public async storeToClient(req: Request, res: Response): Promise<Response> {
+    try {
+      const { name, email, password, street, address, number } = req.body;
+      const repo = getRepository(Client);
+
+      if (await repo.findOne({ where: { email } })) {
+        return res
+          .status(400)
+          .json({ Message: 'E-mail is already being used' });
+      }
+
+      const client = repo.create({
+        name,
+        email,
+        password,
+        street,
+        address,
+        number
+      });
+      const erros = await validate(client);
+
+      if (erros.length !== 0) {
+        return res.status(400).json(erros.map(content => content.constraints));
+      }
+
+      client.password = await bcrypt.hash(client.password, BCRYPT_HASH_ROUND);
+
+      const data = await repo.save(client);
+      delete data.password;
+      delete data.passwordResetExpires;
+      delete data.passwordResetToken;
+
+      return res
+        .status(200)
+        .json({ data, token: generateToken({ id: data.id }) });
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Store Client Failed' });
+    }
+  }
+
+  public async destroyToClient(req: Request, res: Response): Promise<Response> {
+    try {
+      // @ts-ignore
+      const id = req.userId;
+      const repo = getRepository(Client);
+      const data = await repo.findOne({ where: { id } });
+
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Client' });
+      }
+
+      await repo.remove(data);
+      return res.status(200).json();
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Destroy Client Failed' });
+    }
+  }
+
+  public async updateToClient(req: Request, res: Response): Promise<Response> {
+    try {
+      // @ts-ignore
+      const id = req.userId;
+      const { name, email, password, street, address, number } = req.body;
+      const repo = getRepository(Client);
+
+      if (email) {
+        if (await repo.findOne({ where: { email } })) {
+          return res
+            .status(400)
+            .json({ Message: 'E-mail is already being used' });
+        }
+      }
+
+      const data = await repo.findOne({ where: { id } });
+
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Client' });
+      }
+
+      const newClient = repo.create({
+        name: name || data.name,
+        email: email || data.email,
+        password: password || data.password,
+        street: street || data.street,
+        address: address || data.address,
+        number: number || data.number,
+        demand: data.demand,
+        demands: data.demands
+      });
+
+      await repo.update(id, newClient);
+      return res.status(200).json();
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Update Client Failed' });
+    }
+  }
+
+  public async showToClient(req: Request, res: Response): Promise<Response> {
+    try {
+      // @ts-ignore
+      const id = req.userId;
+      const repo = getRepository(Client);
+      const data = await repo.findOne({ where: { id } });
+
+      if (!data) {
+        return res.status(400).json({ Mensagge: 'Not Found Client' });
+      }
+
+      return res.status(200).json(data);
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'Show Client Failed' });
     }
   }
 }
