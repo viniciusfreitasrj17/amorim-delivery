@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-ignore */
 import { Router } from 'express';
 import ClientController from './controllers/ClientController';
+import AdminController from './controllers/AdminController';
 import FoodController from './controllers/FoodController';
 import CategoryController from './controllers/CategoryController';
 import DemandController from './controllers/DemandController';
@@ -41,13 +42,22 @@ routes.put('/demandAdmin/:id', DemandController.update);
 // routes Demand to Client
 // @ts-ignorets
 routes.get('/demand/:client', authMiddleware, DemandController.indexToClient);
-// // @ts-ignorets
-// routes.get('/demand/:id', authMiddleware, DemandController.show);
 // @ts-ignorets
 routes.post('/demand/:client', authMiddleware, DemandController.storeToClient);
+
+// routes Admin Master
 // @ts-ignorets
-// routes.delete('/demand/:id', authMiddleware, DemandController.destroy);
-// // @ts-ignorets
-// routes.put('/demand/:id', authMiddleware, DemandController.update);
+routes.get('/admin', authMiddleware, AdminController.index);
+// @ts-ignorets
+routes.get('/admin/:id', authMiddleware, AdminController.show);
+// @ts-ignorets
+routes.post('/admin', authMiddleware, AdminController.store);
+// @ts-ignorets
+routes.delete('/admin/:id', authMiddleware, AdminController.destroy);
+// @ts-ignorets
+routes.put('/admin/:id', authMiddleware, AdminController.update);
+routes.post('/admin/auth', AdminController.auth);
+routes.post('/admin/forgotPassword', AdminController.forgotPassword);
+routes.post('/admin/resetPassword', AdminController.resetPassword);
 
 export default routes;
