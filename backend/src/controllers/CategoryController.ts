@@ -1,12 +1,20 @@
+/* eslint-disable @typescript-eslint/ban-ts-ignore */
 /* eslint-disable no-console */
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
 import { validate } from 'class-validator';
 import Category from '../models/Category';
+import { verifyAdmin } from '../utils/verifyAdmin';
 
 class CategoryController {
   public async index(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const repo = getRepository(Category);
       const data = await repo.find();
 
@@ -19,6 +27,12 @@ class CategoryController {
 
   public async store(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { name } = req.body;
       const repo = getRepository(Category);
 
@@ -39,6 +53,12 @@ class CategoryController {
 
   public async destroy(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const repo = getRepository(Category);
       const data = await repo.findOne({ where: { id } });
@@ -56,6 +76,12 @@ class CategoryController {
 
   public async update(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const { name } = req.body;
       const repo = getRepository(Category);

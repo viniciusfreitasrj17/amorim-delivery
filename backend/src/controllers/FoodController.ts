@@ -1,12 +1,22 @@
+/* eslint-disable consistent-return */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/ban-ts-ignore */
 /* eslint-disable no-console */
 import { Response, Request } from 'express';
 import { getRepository } from 'typeorm';
 import { validate } from 'class-validator';
 import Food from '../models/Food';
+import { verifyAdmin } from '../utils/verifyAdmin';
 
 class FoodController {
   public async index(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const repo = getRepository(Food);
       const data = await repo.find();
 
@@ -19,6 +29,12 @@ class FoodController {
 
   public async store(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { name, stock, price, category } = req.body;
       const repo = getRepository(Food);
 
@@ -44,6 +60,12 @@ class FoodController {
 
   public async show(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const repo = getRepository(Food);
       const data = await repo.findOne({ where: { id } });
@@ -61,6 +83,12 @@ class FoodController {
 
   public async destroy(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const repo = getRepository(Food);
       const data = await repo.findOne({ where: { id } });
@@ -79,6 +107,12 @@ class FoodController {
 
   public async update(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const { name, price, stock, category } = req.body;
       const repo = getRepository(Food);

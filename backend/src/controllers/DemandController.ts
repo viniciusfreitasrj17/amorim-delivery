@@ -14,6 +14,7 @@ import { validate } from 'class-validator';
 import Demand from '../models/Demand';
 import FoodRepository from '../repositories/FoodRepository';
 import Client from '../models/Client';
+import { verifyAdmin } from '../utils/verifyAdmin';
 
 class DemandController {
   public async index(
@@ -21,6 +22,12 @@ class DemandController {
     res: Response
   ): Promise<Response | undefined> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const repo = getRepository(Demand);
       const data = await repo.find();
 
@@ -57,6 +64,12 @@ class DemandController {
 
   public async store(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { total, foods, client } = req.body;
 
       const repo = getRepository(Demand);
@@ -112,6 +125,12 @@ class DemandController {
     res: Response
   ): Promise<Response | undefined> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const repo = getRepository(Demand);
       const data = await repo.findOne({ where: { id } });
@@ -147,6 +166,12 @@ class DemandController {
 
   public async destroy(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const repo = getRepository(Demand);
       const data = await repo.findOne({ where: { id } });
@@ -176,6 +201,12 @@ class DemandController {
 
   public async update(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const { total, foods } = req.body;
       const repo = getRepository(Demand);

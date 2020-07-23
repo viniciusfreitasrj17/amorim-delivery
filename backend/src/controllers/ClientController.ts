@@ -9,12 +9,19 @@ import crypto from 'crypto';
 import Client from '../models/Client';
 import { generateToken } from '../utils/generateToken';
 import mailer from '../services/mailer';
+import { verifyAdmin } from '../utils/verifyAdmin';
 
 const BCRYPT_HASH_ROUND = 10;
 
 class ClientController {
   public async index(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const repo = getRepository(Client);
       const data = await repo.find();
 
@@ -68,6 +75,12 @@ class ClientController {
 
   public async show(req: Request, res: Response): Promise<Response> {
     try {
+      // @ts-ignore
+      const verify = await verifyAdmin(req.userId, res);
+      if (!verify) {
+        return res.status(400).json({ Message: 'Error, Log in again' });
+      }
+
       const { id } = req.params;
       const repo = getRepository(Client);
       const data = await repo.findOne({ where: { id } });
@@ -85,7 +98,8 @@ class ClientController {
 
   public async destroy(req: Request, res: Response): Promise<Response> {
     try {
-      const { id } = req.params;
+      // @ts-ignore
+      const id = req.userId;
       const repo = getRepository(Client);
       const data = await repo.findOne({ where: { id } });
 
@@ -103,7 +117,8 @@ class ClientController {
 
   public async update(req: Request, res: Response): Promise<Response> {
     try {
-      const { id } = req.params;
+      // @ts-ignore
+      const id = req.userId;
       const { name, email, password, street, address, number } = req.body;
       const repo = getRepository(Client);
 
