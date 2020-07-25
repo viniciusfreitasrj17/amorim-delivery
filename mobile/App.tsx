@@ -27,8 +27,6 @@ const Tabs = () => (
   <Tab.Navigator
     screenOptions={({ route }) => ({
       tabBarIcon: ({ focused, color, size }) => {
-        // let iconName = "";
-
         if (route.name === "Home") {
           if (focused) {
             return (
@@ -57,7 +55,6 @@ const Tabs = () => (
           }
         }
         // You can return any component that you like here!
-        // return <Ionicons name={iconName} size={size} color={color} />;
       },
     })}
     tabBarOptions={{
@@ -65,9 +62,24 @@ const Tabs = () => (
       inactiveTintColor: "gray",
     }}
   >
-    <Tab.Screen name="Home" component={Home} />
-    <Tab.Screen name="Search" component={Search} />
-    <Tab.Screen name="Demands" component={Demands} />
+    <Tab.Screen
+      name="Home"
+      component={Home}
+      options={{ tabBarLabel: "Início" }}
+    />
+    <Tab.Screen
+      name="Search"
+      component={Search}
+      options={{ tabBarLabel: "Busca" }}
+    />
+    <Tab.Screen
+      name="Demands"
+      component={Demands}
+      options={{ tabBarLabel: "Pedidos" }}
+    />
+    {
+      // You can return any component that you like here!
+    }
   </Tab.Navigator>
 );
 
@@ -79,9 +91,8 @@ export default function App() {
           name="Home"
           component={Tabs}
           options={{
-            title: "Bem-vindo",
-            headerStyle: { backgroundColor: "#121212" },
-            headerTintColor: "#fff",
+            title: "",
+            headerStyle: { height: 0 },
           }}
         />
       </Stack.Navigator>

@@ -1,11 +1,12 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { SafeAreaView, Text } from "react-native";
+import { styles } from "../styles/global";
 
 const Search: React.FC = () => {
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
       <Text>Search</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 

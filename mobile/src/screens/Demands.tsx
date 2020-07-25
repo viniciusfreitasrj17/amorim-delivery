@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text } from "react-native";
-import { RootStackParamList } from "../../App";
+import { SafeAreaView, Text } from "react-native";
 import { RouteProp } from "@react-navigation/native";
+import { RootStackParamList } from "../../App";
+import { styles } from "../styles/global";
 
 type PerfilScreenRouteProp = RouteProp<RootStackParamList, "Demands">;
 
@@ -11,9 +12,9 @@ type Props = {
 
 const Demands: React.FC<Props> = ({ route }) => {
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
       <Text>Meu nome é: {route.params?.nome} </Text>
-    </View>
+    </SafeAreaView>
   );
 };
 

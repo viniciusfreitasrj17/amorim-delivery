@@ -1,7 +1,8 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { SafeAreaView, Text, Button } from "react-native";
 import { RootStackParamList } from "../../App";
 import { StackNavigationProp } from "@react-navigation/stack";
+import { styles } from "../styles/global";
 
 type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, "Home">;
 
@@ -11,13 +12,13 @@ type Props = {
 
 const Home: React.FC<Props> = ({ navigation }) => {
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
       <Text>Home</Text>
       <Button
         title="Ir para as Demandas"
         onPress={() => navigation.navigate("Demands", { nome: "Marcos" })}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
