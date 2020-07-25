@@ -3,7 +3,12 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Ionicons } from "@expo/vector-icons";
+import {
+  Ionicons,
+  MaterialCommunityIcons,
+  AntDesign,
+  FontAwesome,
+} from "@expo/vector-icons";
 
 import Home from "./src/screens/Home";
 import Search from "./src/screens/Search";
@@ -22,17 +27,37 @@ const Tabs = () => (
   <Tab.Navigator
     screenOptions={({ route }) => ({
       tabBarIcon: ({ focused, color, size }) => {
-        let iconName = "";
+        // let iconName = "";
 
         if (route.name === "Home") {
-          focused
-            ? (iconName = "ios-information-circle")
-            : (iconName = "ios-information-circle-outline");
+          if (focused) {
+            return (
+              <MaterialCommunityIcons name="home" size={size} color={color} />
+            );
+          } else {
+            return (
+              <MaterialCommunityIcons
+                name="home-outline"
+                size={size}
+                color={color}
+              />
+            );
+          }
         } else if (route.name === "Search") {
-          focused ? (iconName = "ios-list-box") : (iconName = "ios-list");
+          if (focused) {
+            return <FontAwesome name="search" size={size} color={color} />;
+          } else {
+            return <AntDesign name="search1" size={size} color={color} />;
+          }
+        } else if (route.name === "Demands") {
+          if (focused) {
+            return <Ionicons name="ios-list-box" size={size} color={color} />;
+          } else {
+            return <Ionicons name="ios-list" size={size} color={color} />;
+          }
         }
         // You can return any component that you like here!
-        return <Ionicons name={iconName} size={size} color={color} />;
+        // return <Ionicons name={iconName} size={size} color={color} />;
       },
     })}
     tabBarOptions={{
@@ -42,6 +67,7 @@ const Tabs = () => (
   >
     <Tab.Screen name="Home" component={Home} />
     <Tab.Screen name="Search" component={Search} />
+    <Tab.Screen name="Demands" component={Demands} />
   </Tab.Navigator>
 );
 
@@ -58,7 +84,6 @@ export default function App() {
             headerTintColor: "#fff",
           }}
         />
-        <Stack.Screen name="Demands" component={Demands} />
       </Stack.Navigator>
     </NavigationContainer>
   );
