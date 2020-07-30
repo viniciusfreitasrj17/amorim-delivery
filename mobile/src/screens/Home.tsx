@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { SafeAreaView, FlatList, View, Image, Text } from "react-native";
+import {
+  SafeAreaView,
+  FlatList,
+  View,
+  Image,
+  Text,
+  Dimensions,
+} from "react-native";
 import { RootStackParamList } from "../../App";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { styles } from "../styles/global";
@@ -10,6 +17,8 @@ type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, "Home">;
 type Props = {
   navigation: HomeScreenNavigationProp;
 };
+
+const widthScreen = Dimensions.get("window").width;
 
 const Home: React.FC<Props> = ({ navigation }) => {
   const [categories, setCategories] = useState([
@@ -49,7 +58,14 @@ const Home: React.FC<Props> = ({ navigation }) => {
         "https://www.zappas.com.br/wp-content/uploads/2020/04/Suco-de-Laranja-1.jpg",
     },
   ]);
-  const Product = ({ item }: { item: { image: string } }) => {
+
+  const [promo, setPromo] = useState([
+    "http://tutofox.com/foodapp//banner/banner-1.jpg",
+    "http://tutofox.com/foodapp//banner/banner-2.jpg",
+    "http://tutofox.com/foodapp//banner/banner-3.png",
+  ]);
+
+  const Category = ({ item }: { item: { image: string } }) => {
     return (
       <View>
         <View style={{ marginHorizontal: 15 }}>
@@ -59,6 +75,25 @@ const Home: React.FC<Props> = ({ navigation }) => {
               borderRadius: 50,
               height: 100,
               width: 100,
+              borderWidth: 1,
+              borderColor: "black",
+            }}
+          />
+        </View>
+      </View>
+    );
+  };
+
+  const Promocao = ({ item }: { item: string }) => {
+    return (
+      <View>
+        <View style={{ marginHorizontal: 5 }}>
+          <Image
+            source={{ uri: item }}
+            style={{
+              borderRadius: 5,
+              height: 200,
+              width: widthScreen - 10,
               borderWidth: 1,
               borderColor: "black",
             }}
@@ -80,7 +115,24 @@ const Home: React.FC<Props> = ({ navigation }) => {
         legacyImplementation={false}
         data={categories}
         keyExtractor={(item) => item.id}
-        renderItem={Product}
+        renderItem={Category}
+        contentContainerStyle={{
+          justifyContent: "center",
+          flexDirection: "row",
+          paddingVertical: 15,
+        }}
+      />
+
+      <Text>Promoção</Text>
+
+      <FlatList
+        horizontal
+        pagingEnabled
+        showsHorizontalScrollIndicator={false}
+        legacyImplementation={false}
+        data={promo}
+        keyExtractor={(item) => item}
+        renderItem={Promocao}
         contentContainerStyle={{
           justifyContent: "center",
           flexDirection: "row",

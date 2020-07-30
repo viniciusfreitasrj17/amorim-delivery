@@ -7,7 +7,6 @@ export type RootStackParamList = {
   Home: undefined;
   Search: undefined;
   Demands: undefined;
-  // TitleScreem: undefined;
 };
 
 export default function App() {
