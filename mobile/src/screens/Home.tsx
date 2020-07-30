@@ -14,10 +14,10 @@ type Props = {
 const Home: React.FC<Props> = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Title title="Home" />
+      <Title title="Home" navigation={navigation} />
       <Button
-        title="Ir para as Demandas"
-        onPress={() => navigation.navigate("Demands", { nome: "Marcos" })}
+        title="Ir para a Busca"
+        onPress={() => navigation.navigate("Search")}
       />
     </SafeAreaView>
   );
