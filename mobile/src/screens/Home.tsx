@@ -6,6 +6,7 @@ import {
   Image,
   Text,
   Dimensions,
+  StyleSheet,
 } from "react-native";
 import Carousel from "react-native-snap-carousel";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -110,7 +111,7 @@ const Home: React.FC<Props> = ({ navigation }) => {
     <SafeAreaView style={styles.container}>
       <Title title="Home" navigation={navigation} />
 
-      <Text>Categorias</Text>
+      <Text style={stylesLocal.label}>Categorias</Text>
 
       <FlatList
         horizontal
@@ -126,7 +127,7 @@ const Home: React.FC<Props> = ({ navigation }) => {
         }}
       />
 
-      <Text>Promoção</Text>
+      <Text style={stylesLocal.label}>Promoções</Text>
 
       <Carousel
         layout={"default"}
@@ -149,5 +150,13 @@ const Home: React.FC<Props> = ({ navigation }) => {
     </SafeAreaView>
   );
 };
+
+const stylesLocal = StyleSheet.create({
+  label: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginLeft: 5,
+  },
+});
 
 export default Home;
