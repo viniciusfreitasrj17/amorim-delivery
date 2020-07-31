@@ -7,8 +7,9 @@ import {
   Text,
   Dimensions,
 } from "react-native";
-import { RootStackParamList } from "../../App";
+import Carousel from "react-native-snap-carousel";
 import { StackNavigationProp } from "@react-navigation/stack";
+import { RootStackParamList } from "../../App";
 import { styles } from "../styles/global";
 import Title from "../components/TitleScreen";
 
@@ -59,12 +60,6 @@ const Home: React.FC<Props> = ({ navigation }) => {
     },
   ]);
 
-  const [promo, setPromo] = useState([
-    "http://tutofox.com/foodapp//banner/banner-1.jpg",
-    "http://tutofox.com/foodapp//banner/banner-2.jpg",
-    "http://tutofox.com/foodapp//banner/banner-3.png",
-  ]);
-
   const Category = ({ item }: { item: { image: string } }) => {
     return (
       <View>
@@ -103,6 +98,14 @@ const Home: React.FC<Props> = ({ navigation }) => {
     );
   };
 
+  const [promo, setPromo] = useState([
+    "http://tutofox.com/foodapp//banner/banner-1.jpg",
+    "http://tutofox.com/foodapp//banner/banner-2.jpg",
+    "http://tutofox.com/foodapp//banner/banner-3.png",
+  ]);
+
+  const [activeIndexPromo, setActiveIndexPromo] = useState(0);
+
   return (
     <SafeAreaView style={styles.container}>
       <Title title="Home" navigation={navigation} />
@@ -125,15 +128,19 @@ const Home: React.FC<Props> = ({ navigation }) => {
 
       <Text>Promoção</Text>
 
-      <FlatList
-        horizontal
-        pagingEnabled
-        showsHorizontalScrollIndicator={false}
-        legacyImplementation={false}
+      <Carousel
+        layout={"default"}
+        ref={(ref) => ref}
         data={promo}
-        keyExtractor={(item) => item}
+        sliderWidth={widthScreen - 5}
+        itemWidth={widthScreen}
         renderItem={Promocao}
-        contentContainerStyle={{
+        onSnapToItem={(index) => setActiveIndexPromo(index)}
+        autoplay={true}
+        enableMomentum={false}
+        lockScrollWhileSnapping={false}
+        autoplayInterval={3000}
+        slideStyle={{
           justifyContent: "center",
           flexDirection: "row",
           paddingVertical: 15,
