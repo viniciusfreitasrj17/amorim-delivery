@@ -21,7 +21,7 @@ class CategoryController {
       return res.status(200).json(data);
     } catch (err) {
       console.log(err.message);
-      return res.status(400).json({ Message: 'Get Category Failed' });
+      return res.status(400).json({ Message: 'Index Category Failed' });
     }
   }
 
@@ -100,6 +100,25 @@ class CategoryController {
     } catch (err) {
       console.log(err.message);
       return res.status(400).json({ Message: 'Update Category Failed' });
+    }
+  }
+
+  public async indexToClient(req: Request, res: Response): Promise<Response> {
+    try {
+      // @ts-ignore
+      const client = req.userId;
+
+      if (!client) {
+        return res.status(400).json({ Mensagge: 'Error Login Client' });
+      }
+
+      const repo = getRepository(Category);
+      const data = await repo.find();
+
+      return res.status(200).json(data);
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Message: 'IndexToClient Category Failed' });
     }
   }
 }

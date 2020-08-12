@@ -136,6 +136,25 @@ class FoodController {
       return res.status(400).json({ Mensagge: 'Update Food Failed' });
     }
   }
+
+  public async indexToClient(req: Request, res: Response): Promise<Response> {
+    try {
+      // @ts-ignore
+      const client = req.userId;
+
+      if (!client) {
+        return res.status(400).json({ Mensagge: 'Error Login Client' });
+      }
+
+      const repo = getRepository(Food);
+      const data = await repo.find();
+
+      return res.status(200).json(data);
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'IndexToClient Food Failed' });
+    }
+  }
 }
 
 export default new FoodController();

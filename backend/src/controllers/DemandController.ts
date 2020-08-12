@@ -314,7 +314,7 @@ class DemandController {
       return res.status(400).json(erros.map(content => content.constraints));
     } catch (err) {
       console.log(err);
-      return res.status(400).json({ Mensagge: 'Store Demand Failed' });
+      return res.status(400).json({ Mensagge: 'StoreToClientDemand Failed' });
     }
   }
 
@@ -365,7 +365,7 @@ class DemandController {
         .catch(err => console.log('Promisse.all Mount Object Erro ->', err));
     } catch (err) {
       console.log(err.message);
-      return res.status(400).json({ Mensagge: 'Index Demand Failed' });
+      return res.status(400).json({ Mensagge: 'IndexToClient Demand Failed' });
     }
   }
 }

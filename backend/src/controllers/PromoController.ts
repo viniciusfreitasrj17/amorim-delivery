@@ -199,117 +199,58 @@ class PromoController {
     }
   }
 
-  // public async storeToClient(req: Request, res: Response): Promise<Response> {
-  //   try {
-  //     // @ts-ignore
-  //     const client = req.userId;
+  public async indexToClient(
+    req: Request,
+    res: Response
+  ): Promise<Response | undefined> {
+    try {
+      // @ts-ignore
+      const client = req.userId;
 
-  //     const { promo } = req.body;
+      if (!client) {
+        return res.status(400).json({ Mensagge: 'Error Login Client' });
+      }
 
-  //     const repoDemand = getRepository(Demand);
-  //     const repo = getRepository(Promo);
-  //     const promoObject = await repo.findOne({ where: { id: promo } });
+      const repo = getRepository(Promo);
+      const data = await repo.find();
 
-  //     if (!promoObject) {
-  //       return res.status(400).json({ Mensagge: 'Not Found Promo' });
-  //     }
+      if (data.length === 0) {
+        return res
+          .status(200)
+          .json({ Message: 'Not Found Promo for this Client' });
+      }
 
-  //     const demand = repoDemand.create({
-  //       total: promoObject.total,
-  //       foods: promoObject.foods,
-  //       client
-  //     });
+      const promoList = new Array();
 
-  //     const erros = await validate(demand);
+      Promise.all(
+        data.map(async promo => {
+          promoList.push({
+            id: promo.id,
+            name: promo.name,
+            total: promo.total,
+            image: promo.image,
+            createdAt: promo.createdAt,
+            updatedAt: promo.updatedAt,
+            foods: await Promise.all(
+              promo.foods.map(async (idFood: string) => {
+                let repo = getCustomRepository(FoodRepository);
+                let [Food] = await repo.findByFoodId(idFood);
 
-  //     if (erros.length !== 0) {
-  //       return res.status(400).json(erros.map(content => content.constraints));
-  //     }
-
-  //     const repoClient = getRepository(Client);
-  //     const objClient = await repoClient.find({ where: { id: client } });
-  //     const newClient = new Client();
-
-  //     newClient.updatedAt = objClient[0].updatedAt;
-
-  //     const data = await repo.save(demand);
-
-  //     if (objClient[0].demands.length > 0) {
-  //       const array = [];
-  //       array.push(data.id);
-  //       for (let d of objClient[0].demands) {
-  //         array.push(d);
-  //       }
-  //       newClient.demands = array;
-  //     } else {
-  //       if (
-  //         objClient[0].demands[0] === null ||
-  //         objClient[0].demands.length === 0
-  //       ) {
-  //         const array = [];
-  //         array.push(data.id);
-  //         newClient.demands = array;
-  //       }
-  //     }
-
-  //     await repoClient.update(client, newClient);
-
-  //     return res.status(200).json(data);
-  //   } catch (err) {
-  //     console.log(err);
-  //     return res.status(400).json({ Mensagge: 'Store Promo Failed' });
-  //   }
-  // }
-
-  // public async indexToClient(
-  //   req: Request,
-  //   res: Response
-  // ): Promise<Response | undefined> {
-  //   try {
-  //     // @ts-ignore
-  //     const client = req.userId;
-
-  //     const repo = getRepository(Promo);
-  //     const data = await repo.find();
-
-  //     const demandOwner = data.filter(demand => demand.client.id === client);
-
-  //     if (demandOwner.length === 0) {
-  //       return res
-  //         .status(200)
-  //         .json({ Message: 'Not Found Promo for this Client' });
-  //     }
-
-  //     const demandList = new Array();
-
-  //     Promise.all(
-  //       demandOwner.map(async demand => {
-  //         demandList.push({
-  //           id: demand.id,
-  //           total: demand.total,
-  //           client: demand.client,
-  //           createdAt: demand.createdAt,
-  //           updatedAt: demand.updatedAt,
-  //           foods: await Promise.all(
-  //             demand.foods.map(async (idFood: string) => {
-  //               let repo = getCustomRepository(FoodRepository);
-  //               let [Food] = await repo.findByFoodId(idFood);
-
-  //               return Food;
-  //             })
-  //           )
-  //             .then(res => res)
-  //             .catch(err => console.log('Promisse.all Foods Erro ->', err))
-  //         });
-  //       })
-  //     )
-  //       .then(() => res.status(200).json(demandList))
-  //       .catch(err => console.log('Promisse.all Mount Object Erro ->', err));
-  //   } catch (err) {
-  //     console.log(err.message);
-  //     return res.status(400).json({ Mensagge: 'Index Promo Failed' });
-  //   }
-  // }
+                return Food;
+              })
+            )
+              .then(res => res)
+              .catch(err => console.log('Promisse.all Foods Erro ->', err))
+          });
+        })
+      )
+        .then(() => res.status(200).json(promoList))
+        .catch(err => console.log('Promisse.all Mount Object Erro ->', err));
+    } catch (err) {
+      console.log(err.message);
+      return res.status(400).json({ Mensagge: 'IndexToClient Promo Failed' });
+    }
+  }
 }
 
 export default new PromoController();

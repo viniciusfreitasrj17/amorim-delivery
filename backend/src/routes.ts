@@ -43,6 +43,8 @@ routes.post('/food', authMiddleware, FoodController.store); // Admin 👌
 routes.delete('/food/:id', authMiddleware, FoodController.destroy); // Admin 👌
 // @ts-ignore
 routes.put('/food/:id', authMiddleware, FoodController.update); // Admin 👌
+// @ts-ignore
+routes.get('/foodClient', authMiddleware, FoodController.indexToClient); // Client 👌
 
 // routes Category
 // @ts-ignore
@@ -53,6 +55,8 @@ routes.post('/category', authMiddleware, CategoryController.store); // Admin �
 routes.delete('/category/:id', authMiddleware, CategoryController.destroy); // Admin 👌
 // @ts-ignore
 routes.put('/category/:id', authMiddleware, CategoryController.update); // Admin 👌
+// @ts-ignore
+routes.get('/categoryClient', authMiddleware, CategoryController.indexToClient); // Client 👌
 
 // routes Demand
 // @ts-ignore
@@ -81,8 +85,8 @@ routes.post('/promoAdmin', authMiddleware, PromoController.store); // Admin 👌
 routes.delete('/promoAdmin/:id', authMiddleware, PromoController.destroy); // Admin 👌
 // @ts-ignore
 routes.put('/promoAdmin/:id', authMiddleware, PromoController.update); // Admin 👌
-// // @ts-ignorets
-// routes.get('/demand', authMiddleware, DemandController.indexToClient); // Client 👌
+// @ts-ignorets
+routes.get('/promo', authMiddleware, PromoController.indexToClient); // Client 👌
 // // @ts-ignorets
 // routes.post('/demand', authMiddleware, DemandController.storeToClient); // Client 👌
 
