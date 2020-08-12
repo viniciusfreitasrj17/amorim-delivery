@@ -8,7 +8,6 @@ import {
   Dimensions,
   StyleSheet,
   TouchableOpacity,
-  ScrollView,
 } from "react-native";
 import Carousel from "react-native-snap-carousel";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -172,12 +171,18 @@ const Home: React.FC<Props> = ({ navigation }) => {
   const Food: React.FC<FoodInterface> = ({ item }) => {
     return (
       <View>
-        <View style={{ borderWidth: 1, margin: 10, padding: 2 }}>
+        <View
+          style={{
+            borderWidth: 1,
+            margin: 10,
+            padding: 2,
+          }}
+        >
           <TouchableOpacity
             style={{
               flexDirection: "row",
               justifyContent: "space-between",
-              marginVertical: 8,
+              marginVertical: 5,
             }}
           >
             <View style={{ flex: 1 }}>
@@ -191,8 +196,8 @@ const Home: React.FC<Props> = ({ navigation }) => {
                 source={{ uri: item.image }}
                 style={{
                   borderRadius: 5,
-                  height: 150,
-                  width: 150,
+                  height: 120,
+                  width: 120,
                   borderWidth: 1,
                   borderColor: "black",
                 }}
@@ -207,67 +212,96 @@ const Home: React.FC<Props> = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <Title title="Home" navigation={navigation} />
-      {/* <ScrollView> */}
-      <Text style={stylesLocal.label}>Categorias</Text>
+      <View style={{ height: "auto" }}>
+        <View>
+          <View style={{ height: "auto" }}>
+            <FlatList
+              ListHeaderComponent={
+                <>
+                  <Text style={stylesLocal.label}>Categorias</Text>
 
-      <FlatList
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        legacyImplementation={false}
-        data={categories}
-        keyExtractor={(item) => item.id}
-        renderItem={Category}
-        contentContainerStyle={{
-          justifyContent: "center",
-          flexDirection: "row",
-          paddingVertical: 15,
-        }}
-      />
+                  <View style={{ height: 140 }}>
+                    <FlatList
+                      horizontal
+                      showsHorizontalScrollIndicator={false}
+                      legacyImplementation={false}
+                      data={categories}
+                      keyExtractor={(item) => item.id}
+                      renderItem={Category}
+                      contentContainerStyle={{
+                        justifyContent: "center",
+                        flexDirection: "row",
+                        paddingVertical: 15,
+                      }}
+                    />
+                  </View>
 
-      <Text style={stylesLocal.label}>Promoções</Text>
+                  <Text style={stylesLocal.label}>Promoções</Text>
 
-      <Carousel
-        layout={"default"}
-        ref={(ref) => ref}
-        data={promo}
-        sliderWidth={widthScreen - 5}
-        itemWidth={widthScreen}
-        renderItem={Promocao}
-        onSnapToItem={(index) => setActiveIndexPromo(index)}
-        autoplay={true}
-        enableMomentum={false}
-        lockScrollWhileSnapping={false}
-        autoplayInterval={3000}
-        slideStyle={{
-          justifyContent: "center",
-          flexDirection: "row",
-          paddingVertical: 15,
-        }}
-      />
+                  <View style={{ height: 240 }}>
+                    <Carousel
+                      layout={"default"}
+                      ref={(ref) => ref}
+                      data={promo}
+                      sliderWidth={widthScreen - 5}
+                      itemWidth={widthScreen}
+                      renderItem={Promocao}
+                      onSnapToItem={(index) => setActiveIndexPromo(index)}
+                      autoplay={true}
+                      enableMomentum={false}
+                      lockScrollWhileSnapping={false}
+                      autoplayInterval={3000}
+                      slideStyle={{
+                        justifyContent: "center",
+                        flexDirection: "row",
+                        paddingVertical: 15,
+                      }}
+                    />
+                  </View>
 
-      <Text style={stylesLocal.label}>Histórico</Text>
+                  <Text style={stylesLocal.label}>Histórico</Text>
 
-      <FlatList
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        legacyImplementation={false}
-        data={categories}
-        keyExtractor={(item) => item.id}
-        renderItem={Category}
-        contentContainerStyle={{
-          justifyContent: "center",
-          flexDirection: "row",
-          paddingVertical: 15,
-        }}
-      />
+                  <View style={{ height: 140 }}>
+                    <FlatList
+                      horizontal
+                      showsHorizontalScrollIndicator={false}
+                      legacyImplementation={false}
+                      data={categories}
+                      keyExtractor={(item) => item.id}
+                      renderItem={Category}
+                      contentContainerStyle={{
+                        justifyContent: "center",
+                        flexDirection: "row",
+                        paddingVertical: 15,
+                      }}
+                    />
+                  </View>
 
-      <Text style={stylesLocal.label}>Produtos</Text>
-      <FlatList
-        data={foods}
-        keyExtractor={(item) => item.id}
-        renderItem={Food}
-      />
-      {/* </ScrollView> */}
+                  <Text style={stylesLocal.label}>Produtos</Text>
+                </>
+              }
+              data={foods}
+              keyExtractor={(item, index) => index.toString()}
+              renderItem={Food}
+              ListFooterComponent={
+                <View>
+                  <TouchableOpacity
+                    style={{
+                      height: widthScreen * 0.3,
+                      backgroundColor: "#BB1212",
+                      width: "100%",
+                      paddingTop: 25,
+                      alignItems: "center",
+                    }}
+                  >
+                    <Text>Ao Topo</Text>
+                  </TouchableOpacity>
+                </View>
+              }
+            />
+          </View>
+        </View>
+      </View>
     </SafeAreaView>
   );
 };
