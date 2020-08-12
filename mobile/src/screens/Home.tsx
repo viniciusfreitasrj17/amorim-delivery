@@ -7,6 +7,8 @@ import {
   Text,
   Dimensions,
   StyleSheet,
+  TouchableOpacity,
+  ScrollView,
 } from "react-native";
 import Carousel from "react-native-snap-carousel";
 import { StackNavigationProp } from "@react-navigation/stack";
@@ -65,16 +67,18 @@ const Home: React.FC<Props> = ({ navigation }) => {
     return (
       <View>
         <View style={{ marginHorizontal: 15 }}>
-          <Image
-            source={{ uri: item.image }}
-            style={{
-              borderRadius: 50,
-              height: 100,
-              width: 100,
-              borderWidth: 1,
-              borderColor: "black",
-            }}
-          />
+          <TouchableOpacity>
+            <Image
+              source={{ uri: item.image }}
+              style={{
+                borderRadius: 50,
+                height: 100,
+                width: 100,
+                borderWidth: 1,
+                borderColor: "black",
+              }}
+            />
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -110,43 +114,60 @@ const Home: React.FC<Props> = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <Title title="Home" navigation={navigation} />
+      <ScrollView>
+        <Text style={stylesLocal.label}>Categorias</Text>
 
-      <Text style={stylesLocal.label}>Categorias</Text>
+        <FlatList
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          legacyImplementation={false}
+          data={categories}
+          keyExtractor={(item) => item.id}
+          renderItem={Category}
+          contentContainerStyle={{
+            justifyContent: "center",
+            flexDirection: "row",
+            paddingVertical: 15,
+          }}
+        />
 
-      <FlatList
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        legacyImplementation={false}
-        data={categories}
-        keyExtractor={(item) => item.id}
-        renderItem={Category}
-        contentContainerStyle={{
-          justifyContent: "center",
-          flexDirection: "row",
-          paddingVertical: 15,
-        }}
-      />
+        <Text style={stylesLocal.label}>Promoções</Text>
 
-      <Text style={stylesLocal.label}>Promoções</Text>
+        <Carousel
+          layout={"default"}
+          ref={(ref) => ref}
+          data={promo}
+          sliderWidth={widthScreen - 5}
+          itemWidth={widthScreen}
+          renderItem={Promocao}
+          onSnapToItem={(index) => setActiveIndexPromo(index)}
+          autoplay={true}
+          enableMomentum={false}
+          lockScrollWhileSnapping={false}
+          autoplayInterval={3000}
+          slideStyle={{
+            justifyContent: "center",
+            flexDirection: "row",
+            paddingVertical: 15,
+          }}
+        />
 
-      <Carousel
-        layout={"default"}
-        ref={(ref) => ref}
-        data={promo}
-        sliderWidth={widthScreen - 5}
-        itemWidth={widthScreen}
-        renderItem={Promocao}
-        onSnapToItem={(index) => setActiveIndexPromo(index)}
-        autoplay={true}
-        enableMomentum={false}
-        lockScrollWhileSnapping={false}
-        autoplayInterval={3000}
-        slideStyle={{
-          justifyContent: "center",
-          flexDirection: "row",
-          paddingVertical: 15,
-        }}
-      />
+        <Text style={stylesLocal.label}>Histórico</Text>
+
+        <FlatList
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          legacyImplementation={false}
+          data={categories}
+          keyExtractor={(item) => item.id}
+          renderItem={Category}
+          contentContainerStyle={{
+            justifyContent: "center",
+            flexDirection: "row",
+            paddingVertical: 15,
+          }}
+        />
+      </ScrollView>
     </SafeAreaView>
   );
 };
