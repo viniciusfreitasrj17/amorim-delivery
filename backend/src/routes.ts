@@ -5,6 +5,7 @@ import AdminController from './controllers/AdminController';
 import FoodController from './controllers/FoodController';
 import CategoryController from './controllers/CategoryController';
 import DemandController from './controllers/DemandController';
+import PromoController from './controllers/PromoController';
 import authMiddleware from './middlewares/auth';
 
 const routes = Router();
@@ -68,6 +69,22 @@ routes.put('/demandAdmin/:id', authMiddleware, DemandController.update); // Admi
 routes.get('/demand', authMiddleware, DemandController.indexToClient); // Client 👌
 // @ts-ignorets
 routes.post('/demand', authMiddleware, DemandController.storeToClient); // Client 👌
+
+// routes Promo
+// @ts-ignore
+routes.get('/promoAdmin', authMiddleware, PromoController.index); // Admin 👌
+// @ts-ignore
+routes.get('/promoAdmin/:id', authMiddleware, PromoController.show); // Admin 👌
+// @ts-ignore
+routes.post('/promoAdmin', authMiddleware, PromoController.store); // Admin 👌
+// @ts-ignore
+routes.delete('/promoAdmin/:id', authMiddleware, PromoController.destroy); // Admin 👌
+// @ts-ignore
+routes.put('/promoAdmin/:id', authMiddleware, PromoController.update); // Admin 👌
+// // @ts-ignorets
+// routes.get('/demand', authMiddleware, DemandController.indexToClient); // Client 👌
+// // @ts-ignorets
+// routes.post('/demand', authMiddleware, DemandController.storeToClient); // Client 👌
 
 // routes Admin Master
 // @ts-ignorets

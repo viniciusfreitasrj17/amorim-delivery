@@ -19,4 +19,7 @@ export default class Demand extends Global {
   })
   @JoinColumn({ name: 'clientId' })
   client: Client;
+
+  @Column({ nullable: true })
+  promo: string;
 }

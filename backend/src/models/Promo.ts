@@ -13,6 +13,10 @@ export default class Promo extends Global {
   @IsNotEmpty({ message: 'Preencha este campo' })
   image: string;
 
+  @Column()
+  @IsNotEmpty({ message: 'Preencha este campo' })
+  total: number;
+
   @Column('text', { array: true })
   @IsArray()
   foods: string[];

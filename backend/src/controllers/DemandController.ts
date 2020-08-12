@@ -12,6 +12,7 @@ import { Response, Request } from 'express';
 import { getRepository, getCustomRepository } from 'typeorm';
 import { validate } from 'class-validator';
 import Demand from '../models/Demand';
+import Promo from '../models/Promo';
 import FoodRepository from '../repositories/FoodRepository';
 import Client from '../models/Client';
 import { verifyAdmin } from '../utils/verifyAdmin';
@@ -41,6 +42,7 @@ class DemandController {
             client: demand.client,
             createdAt: demand.createdAt,
             updatedAt: demand.updatedAt,
+            promo: demand.promo,
             foods: await Promise.all(
               demand.foods.map(async (idFood: string) => {
                 let repo = getCustomRepository(FoodRepository);
@@ -70,50 +72,65 @@ class DemandController {
         return res.status(400).json({ Message: 'Error, Log in again' });
       }
 
-      const { total, foods, client } = req.body;
+      const { total, foods, client, promo } = req.body;
 
       const repo = getRepository(Demand);
+      const repoPromo = getRepository(Promo);
 
       const demand = new Demand();
-      demand.total = total;
-      demand.foods = foods;
-      demand.client = client;
+
+      if (promo) {
+        const promoObject = await repoPromo.findOne({ where: { id: promo } });
+
+        if (!promoObject) {
+          return res.status(400).json({ Mensagge: 'Not Found Promo' });
+        }
+
+        demand.total = promoObject.total;
+        demand.foods = promoObject.foods;
+        demand.client = client;
+        demand.promo = promo;
+      } else {
+        demand.total = total;
+        demand.foods = foods;
+        demand.client = client;
+      }
 
       const erros = await validate(demand);
 
-      if (erros.length === 0) {
-        const repoClient = getRepository(Client);
-        const objClient = await repoClient.find({ where: { id: client } });
-        const newClient = new Client();
-
-        newClient.updatedAt = objClient[0].updatedAt;
-
-        const data = await repo.save(demand);
-
-        if (objClient[0].demands.length > 0) {
-          const array = [];
-          array.push(data.id);
-          for (let d of objClient[0].demands) {
-            array.push(d);
-          }
-          newClient.demands = array;
-        } else {
-          if (
-            objClient[0].demands[0] === null ||
-            objClient[0].demands.length === 0
-          ) {
-            const array = [];
-            array.push(data.id);
-            newClient.demands = array;
-          }
-        }
-
-        await repoClient.update(client, newClient);
-
-        return res.status(200).json(data);
+      if (erros.length !== 0) {
+        return res.status(400).json(erros.map(content => content.constraints));
       }
 
-      return res.status(400).json(erros.map(content => content.constraints));
+      const repoClient = getRepository(Client);
+      const objClient = await repoClient.find({ where: { id: client } });
+      const newClient = new Client();
+
+      newClient.updatedAt = objClient[0].updatedAt;
+
+      const data = await repo.save(demand);
+
+      if (objClient[0].demands.length > 0) {
+        const array = [];
+        array.push(data.id);
+        for (let d of objClient[0].demands) {
+          array.push(d);
+        }
+        newClient.demands = array;
+      } else {
+        if (
+          objClient[0].demands[0] === null ||
+          objClient[0].demands.length === 0
+        ) {
+          const array = [];
+          array.push(data.id);
+          newClient.demands = array;
+        }
+      }
+
+      await repoClient.update(client, newClient);
+
+      return res.status(200).json(data);
     } catch (err) {
       console.log(err);
       return res.status(400).json({ Mensagge: 'Store Demand Failed' });
@@ -143,6 +160,7 @@ class DemandController {
         id: data.id,
         total: data.total,
         client: data.client,
+        promo: data.promo,
         createdAt: data.createdAt,
         updatedAt: data.updatedAt,
         foods: await Promise.all(
@@ -208,7 +226,7 @@ class DemandController {
       }
 
       const { id } = req.params;
-      const { total, foods } = req.body;
+      const { total, foods, promo } = req.body;
       const repo = getRepository(Demand);
       const data = await repo.findOne({ where: { id } });
 
@@ -218,7 +236,8 @@ class DemandController {
 
       const newDemand = repo.create({
         total: total || data.total,
-        foods: foods || data.foods
+        foods: foods || data.foods,
+        promo: promo || data.promo
       });
 
       await repo.update(id, newDemand);
@@ -234,13 +253,29 @@ class DemandController {
       // @ts-ignore
       const client = req.userId;
 
-      const { total, foods } = req.body;
+      const { total, foods, promo } = req.body;
+
       const repo = getRepository(Demand);
+      const repoPromo = getRepository(Promo);
 
       const demand = new Demand();
-      demand.total = total;
-      demand.foods = foods;
-      demand.client = client;
+
+      if (promo) {
+        const promoObject = await repoPromo.findOne({ where: { id: promo } });
+
+        if (!promoObject) {
+          return res.status(400).json({ Mensagge: 'Not Found Promo' });
+        }
+
+        demand.total = promoObject.total;
+        demand.foods = promoObject.foods;
+        demand.client = client;
+        demand.promo = promo;
+      } else {
+        demand.total = total;
+        demand.foods = foods;
+        demand.client = client;
+      }
 
       const erros = await validate(demand);
 
@@ -310,6 +345,7 @@ class DemandController {
             id: demand.id,
             total: demand.total,
             client: demand.client,
+            promo: demand.promo,
             createdAt: demand.createdAt,
             updatedAt: demand.updatedAt,
             foods: await Promise.all(
