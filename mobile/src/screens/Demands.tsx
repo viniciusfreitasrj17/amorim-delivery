@@ -14,7 +14,7 @@ type Props = {
 const Demands: React.FC<Props> = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Title title="Pedidos" navigation={navigation} />
+      <Title title="Pedidos" navigation={navigation} menu={true} />
       {/* <Text>Meu nome é: {route.params?.nome} </Text> */}
     </SafeAreaView>
   );

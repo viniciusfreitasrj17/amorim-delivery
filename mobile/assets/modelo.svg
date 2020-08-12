@@ -8,7 +8,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="modelo.svg"
-   inkscape:version="1.0 (6e3e5246a0, 2020-05-07)"
+   inkscape:version="1.0 (9f2f71dc58, 2020-08-02)"
    width="1242px"
    height="4968px"
    viewBox="0 0 1242 4968"
@@ -16,6 +16,12 @@
    id="SVGRoot">
   <defs
      id="defs28">
+    <rect
+       x="3658.1765"
+       y="1725.8726"
+       width="370.91675"
+       height="118.68872"
+       id="rect644" />
     <rect
        id="rect47"
        height="65.161806"
@@ -26,7 +32,7 @@
   <sodipodi:namedview
      inkscape:guide-bbox="true"
      showguides="true"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:window-y="27"
      inkscape:window-x="0"
      inkscape:window-height="713"
@@ -35,8 +41,8 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="2443.1514"
-     inkscape:cx="3180.9104"
+     inkscape:cy="2452.504"
+     inkscape:cx="4273.6979"
      inkscape:zoom="0.0875"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -65,7 +71,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -82,47 +88,6 @@
          y="171.21484"><tspan
            dx="0 18.875 40.625 17.75 35.25 17.75"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1">Início</tspan></tspan></text>
-    <text
-       id="text876"
-       y="105.00629"
-       x="494.4505"
-       style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1;"
-         y="105.00629"
-         x="494.4505"
-         id="tspan874"
-         sodipodi:role="line">Início</tspan></text>
-    <rect
-       y="202.51306"
-       x="-1.1951993"
-       height="269.19171"
-       width="1241.6802"
-       id="rect882"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.67905;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.29856;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect882-0"
-       width="1239.9169"
-       height="445.24881"
-       x="-0.31355894"
-       y="573.25262" />
-    <rect
-       transform="scale(-1,1)"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect882-7"
-       width="99.02726"
-       height="99.027267"
-       x="-572.26227"
-       y="105.71702" />
-    <rect
-       y="471.70477"
-       x="-97.832085"
-       height="99.027267"
-       width="99.02726"
-       id="rect882-7-6"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="scale(-1,1)" />
     <text
        id="text931"
        y="348.04361"
@@ -143,160 +108,93 @@
          x="431.44565"
          id="tspan937"
          sodipodi:role="line" /></text>
-    <text
-       id="text943"
-       y="371.17236"
-       x="186.6987"
-       style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-       xml:space="preserve"><tspan
-         y="371.17236"
-         x="186.6987"
-         id="tspan941"
-         sodipodi:role="line">Categoria (status)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-       x="140.68941"
-       y="814.2392"
-       id="text943-9"><tspan
-         sodipodi:role="line"
-         id="tspan941-0"
-         x="140.68941"
-         y="814.2392">Promoções (banner)</tspan></text>
-    <rect
-       y="1124.441"
-       x="0.45232224"
-       height="260.00339"
-       width="1241.6343"
-       id="rect882-0-5"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.58118;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       id="text943-9-0"
-       y="1300.2863"
-       x="186.31398"
-       style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-       xml:space="preserve"><tspan
-         y="1300.2863"
-         x="186.31398"
-         id="tspan941-0-4"
-         sodipodi:role="line">Histórico (status)</tspan></text>
-    <rect
-       transform="scale(-1,1)"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect882-7-6-1"
-       width="99.02726"
-       height="99.027267"
-       x="-98.713699"
-       y="1018.5015" />
-    <rect
-       y="1384.4445"
-       x="-99.479584"
-       height="99.027267"
-       width="99.02726"
-       id="rect882-7-6-1-7"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="scale(-1,1)" />
-    <rect
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:20.1783;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect882-0-5-9"
-       width="1227.0371"
-       height="3439.0137"
-       x="7.7509007"
-       y="1490.7703" />
-    <text
-       xml:space="preserve"
-       style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-       x="267.6001"
-       y="1591.3685"
-       id="text943-9-0-3"><tspan
-         sodipodi:role="line"
-         id="tspan941-0-4-6"
-         x="267.6001"
-         y="1591.3685">Produtos (lista)</tspan></text>
-    <rect
-       y="5.0250626"
-       x="1913.91"
-       height="4971.0078"
-       width="1229.5648"
-       id="rect1047"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:11.9798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-       x="2390.6956"
-       y="103.03589"
-       id="text876-2"><tspan
-         sodipodi:role="line"
-         id="tspan874-1"
+    <g
+       id="g547">
+      <rect
+         y="5.0250626"
+         x="1913.91"
+         height="4971.0078"
+         width="1229.5648"
+         id="rect1047"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:11.9798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
          x="2390.6956"
          y="103.03589"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1">Busca</tspan></text>
-    <rect
-       y="103.74661"
-       x="-2468.5073"
-       height="99.027267"
-       width="99.02726"
-       id="rect882-7-2"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="scale(-1,1)" />
-    <rect
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.78375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect882-5"
-       width="1242.5754"
-       height="190.86818"
-       x="1909.5623"
-       y="201.36378" />
-    <text
-       xml:space="preserve"
-       style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-       x="2096.1631"
-       y="333.12079"
-       id="text943-3"><tspan
-         sodipodi:role="line"
-         id="tspan941-9"
+         id="text876-2"><tspan
+           sodipodi:role="line"
+           id="tspan874-1"
+           x="2390.6956"
+           y="103.03589"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1">Busca</tspan></text>
+      <rect
+         y="103.74661"
+         x="-2468.5073"
+         height="99.027267"
+         width="99.02726"
+         id="rect882-7-2"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="scale(-1,1)" />
+      <rect
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4.78375;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-5"
+         width="1242.5754"
+         height="190.86818"
+         x="1909.5623"
+         y="201.36378" />
+      <text
+         xml:space="preserve"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
          x="2096.1631"
-         y="333.12079">Barra de Pesquisa</tspan></text>
-    <rect
-       transform="scale(-1,1)"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect882-7-2-1"
-       width="99.02726"
-       height="99.027267"
-       x="-2008.5896"
-       y="392.23196" />
-    <rect
-       y="492.74979"
-       x="1911.053"
-       height="504.0936"
-       width="1239.5942"
-       id="rect882-5-8"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.7649;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <text
-       id="text943-3-8"
-       y="768.49884"
-       x="2115.3843"
-       style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-       xml:space="preserve"><tspan
+         y="333.12079"
+         id="text943-3"><tspan
+           sodipodi:role="line"
+           id="tspan941-9"
+           x="2096.1631"
+           y="333.12079">Barra de Pesquisa</tspan></text>
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-2-1"
+         width="99.02726"
+         height="99.027267"
+         x="-2008.5896"
+         y="392.23196" />
+      <rect
+         y="492.74979"
+         x="1911.053"
+         height="504.0936"
+         width="1239.5942"
+         id="rect882-5-8"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.7649;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text943-3-8"
          y="768.49884"
          x="2115.3843"
-         id="tspan941-9-7"
-         sodipodi:role="line">Histórico de Busca</tspan></text>
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           y="768.49884"
+           x="2115.3843"
+           id="tspan941-9-7"
+           sodipodi:role="line">Histórico de Busca</tspan></text>
+    </g>
     <rect
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:11.9798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1047-0"
        width="1229.5648"
        height="4971.0078"
-       x="3832.1548"
-       y="-41.027702" />
+       x="6391.5605"
+       y="27.630213" />
     <text
        id="text876-2-5"
-       y="56.983044"
-       x="4268.9404"
+       y="125.64095"
+       x="6828.3462"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1"
-         y="56.983044"
-         x="4268.9404"
+         y="125.64095"
+         x="6828.3462"
          id="tspan874-1-2"
          sodipodi:role="line">Pedidos</tspan></text>
     <rect
@@ -305,73 +203,74 @@
        id="rect882-7-2-7"
        width="99.02726"
        height="99.027267"
-       x="-4390.752"
-       y="57.693737" />
+       x="-6950.1577"
+       y="126.35165" />
     <rect
-       y="1114.5706"
-       x="-3926.7354"
+       y="1500.323"
+       x="-6498.3784"
        height="99.027267"
        width="99.02726"
        id="rect882-7-2-1-6"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        transform="scale(-1,1)" />
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74616;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect882-5-9"
+       width="1055.2285"
+       height="137.83041"
+       x="6479.8188"
+       y="409.10437" />
+    <text
+       xml:space="preserve"
+       style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+       x="6584.939"
+       y="513.38025"
+       id="text943-3-1"><tspan
+         sodipodi:role="line"
+         id="tspan941-9-9"
+         x="6584.939"
+         y="513.38025">Data da Pesquisa</tspan></text>
+    <rect
+       y="787.01733"
+       x="6473.5557"
+       height="668.21204"
+       width="1070.2249"
+       id="rect882-5-8-3"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8.30683;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       id="text943-3-8-6"
+       y="1035.6885"
+       x="6626.5869"
+       style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+       xml:space="preserve"><tspan
+         y="1035.6885"
+         x="6626.5869"
+         id="tspan941-9-7-8"
+         sodipodi:role="line">Andamento do </tspan><tspan
+         y="1155.6885"
+         x="6626.5869"
+         sodipodi:role="line"
+         id="tspan1024">Pedido</tspan></text>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:11.8539;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect882-5-8-3-4"
+       width="1154.0073"
+       height="1261.9377"
+       x="6429.4814"
+       y="230.29295" />
+    <text
+       id="text876-2-5-6"
+       y="361.94565"
+       x="6816.5532"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1"
+         y="361.94565"
+         x="6816.5532"
+         id="tspan874-1-2-6"
+         sodipodi:role="line">Pendente</tspan></text>
     <g
-       id="g1279">
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74616;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-5-9"
-         width="1055.2285"
-         height="137.83041"
-         x="3920.4128"
-         y="340.44644" />
-      <text
-         xml:space="preserve"
-         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="4025.5327"
-         y="444.72232"
-         id="text943-3-1"><tspan
-           sodipodi:role="line"
-           id="tspan941-9-9"
-           x="4025.5327"
-           y="444.72232">Data da Pesquisa</tspan></text>
-      <rect
-         y="582.07825"
-         x="3914.1497"
-         height="504.63965"
-         width="1070.2249"
-         id="rect882-5-8-3"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.21886;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         id="text943-3-8-6"
-         y="878.10028"
-         x="3998.7539"
-         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
-           y="878.10028"
-           x="3998.7539"
-           id="tspan941-9-7-8"
-           sodipodi:role="line">Detalhes do Pedido</tspan></text>
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:10.3014;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-5-8-3-4"
-         width="1154.0073"
-         height="953.02661"
-         x="3870.0752"
-         y="161.63504" />
-      <text
-         id="text876-2-5-6"
-         y="286.09116"
-         x="4048.1108"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1"
-           y="286.09116"
-           x="4048.1108"
-           id="tspan874-1-2-6"
-           sodipodi:role="line">Item do Histórico</tspan></text>
-    </g>
-    <g
-       transform="translate(-4.367188,1051.9627)"
+       transform="translate(2567.2763,1437.7153)"
        id="g1279-4">
       <rect
          y="340.44644"
@@ -432,11 +331,11 @@
        id="rect882-7-2-1-6-4"
        width="99.02726"
        height="99.027267"
-       x="-3932.7354"
-       y="2166.6243" />
+       x="-6504.3784"
+       y="2552.377" />
     <g
        id="g1279-4-7"
-       transform="translate(1.632713,2104.0165)">
+       transform="translate(2573.2762,2489.7691)">
       <rect
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74616;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect882-5-9-1-2"
@@ -496,11 +395,11 @@
        id="rect882-7-2-1-6-5"
        width="99.02726"
        height="99.027267"
-       x="-3930.7354"
-       y="3218.6782" />
+       x="-6502.3784"
+       y="3604.4309" />
     <g
        id="g1279-4-2"
-       transform="translate(-0.367291,3156.0703)">
+       transform="translate(2571.2762,3541.8229)">
       <rect
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74616;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect882-5-9-1-1"
@@ -560,11 +459,11 @@
        id="rect882-7-2-1-6-2"
        width="99.02726"
        height="99.027267"
-       x="-3930.7354"
-       y="4270.7319" />
+       x="-6502.3784"
+       y="4656.4844" />
     <g
        id="g1279-4-1"
-       transform="translate(-0.367326,4208.1239)">
+       transform="translate(2571.2761,4593.8765)">
       <rect
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74616;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect882-5-9-1-9"
@@ -619,489 +518,884 @@
            sodipodi:role="line">Item do Histórico</tspan></text>
     </g>
     <g
-       transform="translate(1548.1619,-67.486328)"
-       id="g1616">
+       id="g857">
+      <text
+         id="text876"
+         y="105.00629"
+         x="494.4505"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1;"
+           y="105.00629"
+           x="494.4505"
+           id="tspan874"
+           sodipodi:role="line">Início</tspan></text>
       <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3"
-         width="1144.3872"
-         height="552.40149"
-         x="-1490.7351"
-         y="1769.2256" />
+         y="202.51306"
+         x="-1.1951993"
+         height="269.19171"
+         width="1241.6802"
+         id="rect882"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.67905;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
-         y="1852.9667"
-         x="-754.74744"
-         height="356.96719"
-         width="333.94684"
-         id="rect882-0-5-9-3-6"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.29856;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-0"
+         width="1239.9169"
+         height="445.24881"
+         x="-0.31355894"
+         y="573.25262" />
       <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-9"
-         width="585.49866"
-         height="79.874825"
-         x="-1415.4216"
-         y="1852.6794" />
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7"
+         width="99.02726"
+         height="99.027267"
+         x="-572.26227"
+         y="105.71702" />
       <rect
-         y="2000.146"
-         x="-1420.6628"
-         height="79.874825"
-         width="606.92609"
-         id="rect882-0-5-9-3-6-9-8"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-9-8-5"
-         width="606.92609"
-         height="79.874825"
-         x="-1416.0344"
-         y="2134.3481" />
+         y="471.70477"
+         x="-97.832085"
+         height="99.027267"
+         width="99.02726"
+         id="rect882-7-6"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="scale(-1,1)" />
+      <text
+         id="text943"
+         y="371.17236"
+         x="186.6987"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           y="371.17236"
+           x="186.6987"
+           id="tspan941"
+           sodipodi:role="line">Categoria (status)</tspan></text>
       <text
          xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-1379.3716"
-         y="1908.4843"
-         id="text1527"><tspan
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         x="140.68941"
+         y="814.2392"
+         id="text943-9"><tspan
            sodipodi:role="line"
-           id="tspan1525"
-           x="-1379.3716"
-           y="1908.4843">Nome</tspan></text>
+           id="tspan941-0"
+           x="140.68941"
+           y="814.2392">Promoções (banner)</tspan></text>
+      <rect
+         y="1124.441"
+         x="0.45232224"
+         height="260.00339"
+         width="1241.6343"
+         id="rect882-0-5"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.58118;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <text
-         id="text1527-1"
-         y="2055.8645"
-         x="-1386.9069"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         id="text943-9-0"
+         y="1300.2863"
+         x="186.31398"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
          xml:space="preserve"><tspan
+           y="1300.2863"
+           x="186.31398"
+           id="tspan941-0-4"
+           sodipodi:role="line">Histórico (status)</tspan></text>
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1"
+         width="99.02726"
+         height="99.027267"
+         x="-98.713699"
+         y="1018.5015" />
+      <rect
+         y="1384.4445"
+         x="-99.479584"
+         height="99.027267"
+         width="99.02726"
+         id="rect882-7-6-1-7"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="scale(-1,1)" />
+      <rect
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:20.1783;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-0-5-9"
+         width="1227.0371"
+         height="3439.0137"
+         x="7.7509007"
+         y="1490.7703" />
+      <text
+         xml:space="preserve"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         x="267.6001"
+         y="1591.3685"
+         id="text943-9-0-3"><tspan
+           sodipodi:role="line"
+           id="tspan941-0-4-6"
+           x="267.6001"
+           y="1591.3685">Produtos (lista)</tspan></text>
+      <g
+         transform="translate(1548.1619,-67.486328)"
+         id="g1616">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3"
+           width="1144.3872"
+           height="552.40149"
+           x="-1490.7351"
+           y="1769.2256" />
+        <rect
+           y="1852.9667"
+           x="-754.74744"
+           height="356.96719"
+           width="333.94684"
+           id="rect882-0-5-9-3-6"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-9"
+           width="585.49866"
+           height="79.874825"
+           x="-1415.4216"
+           y="1852.6794" />
+        <rect
+           y="2000.146"
+           x="-1420.6628"
+           height="79.874825"
+           width="606.92609"
+           id="rect882-0-5-9-3-6-9-8"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-9-8-5"
+           width="606.92609"
+           height="79.874825"
+           x="-1416.0344"
+           y="2134.3481" />
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           x="-1379.3716"
+           y="1908.4843"
+           id="text1527"><tspan
+             sodipodi:role="line"
+             id="tspan1525"
+             x="-1379.3716"
+             y="1908.4843">Nome</tspan></text>
+        <text
+           id="text1527-1"
            y="2055.8645"
            x="-1386.9069"
-           id="tspan1525-2"
-           sodipodi:role="line">Itens</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-1391.4855"
-         y="2198.0103"
-         id="text1527-1-9"><tspan
-           sodipodi:role="line"
-           id="tspan1525-2-7"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="2055.8645"
+             x="-1386.9069"
+             id="tspan1525-2"
+             sodipodi:role="line">Itens</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-1391.4855"
-           y="2198.0103">Valor</tspan></text>
-      <text
-         id="text1527-1-9-3"
-         y="2048.9885"
-         x="-691.8877"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           y="2198.0103"
+           id="text1527-1-9"><tspan
+             sodipodi:role="line"
+             id="tspan1525-2-7"
+             x="-1391.4855"
+             y="2198.0103">Valor</tspan></text>
+        <text
+           id="text1527-1-9-3"
            y="2048.9885"
            x="-691.8877"
-           id="tspan1525-2-7-8"
-           sodipodi:role="line">Imagem</tspan></text>
-      <text
-         id="text1527-0"
-         y="1823.031"
-         x="-993.09113"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="2048.9885"
+             x="-691.8877"
+             id="tspan1525-2-7-8"
+             sodipodi:role="line">Imagem</tspan></text>
+        <text
+           id="text1527-0"
            y="1823.031"
            x="-993.09113"
-           id="tspan1525-9"
-           sodipodi:role="line">Pedido</tspan></text>
-    </g>
-    <rect
-       transform="scale(-1,1)"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect882-7-6-1-7-2"
-       width="99.02726"
-       height="99.027267"
-       x="-366.45404"
-       y="1602.712" />
-    <g
-       id="g1616-3"
-       transform="translate(1545.7509,582.43572)">
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="1823.031"
+             x="-993.09113"
+             id="tspan1525-9"
+             sodipodi:role="line">Pedido</tspan></text>
+      </g>
       <rect
-         y="1769.2256"
-         x="-1490.7351"
-         height="552.40149"
-         width="1144.3872"
-         id="rect882-0-5-9-3-1"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-8"
-         width="333.94684"
-         height="356.96719"
-         x="-754.74744"
-         y="1852.9667" />
-      <rect
-         y="1852.6794"
-         x="-1415.4216"
-         height="79.874825"
-         width="585.49866"
-         id="rect882-0-5-9-3-6-9-7"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-9-8-4"
-         width="606.92609"
-         height="79.874825"
-         x="-1420.6628"
-         y="2000.146" />
-      <rect
-         y="2134.3481"
-         x="-1416.0344"
-         height="79.874825"
-         width="606.92609"
-         id="rect882-0-5-9-3-6-9-8-5-1"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         id="text1527-6"
-         y="1908.4843"
-         x="-1379.3716"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1-7-2"
+         width="99.02726"
+         height="99.027267"
+         x="-366.45404"
+         y="1602.712" />
+      <g
+         id="g1616-3"
+         transform="translate(1545.7509,582.43572)">
+        <rect
+           y="1769.2256"
+           x="-1490.7351"
+           height="552.40149"
+           width="1144.3872"
+           id="rect882-0-5-9-3-1"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-8"
+           width="333.94684"
+           height="356.96719"
+           x="-754.74744"
+           y="1852.9667" />
+        <rect
+           y="1852.6794"
+           x="-1415.4216"
+           height="79.874825"
+           width="585.49866"
+           id="rect882-0-5-9-3-6-9-7"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-9-8-4"
+           width="606.92609"
+           height="79.874825"
+           x="-1420.6628"
+           y="2000.146" />
+        <rect
+           y="2134.3481"
+           x="-1416.0344"
+           height="79.874825"
+           width="606.92609"
+           id="rect882-0-5-9-3-6-9-8-5-1"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           id="text1527-6"
            y="1908.4843"
            x="-1379.3716"
-           id="tspan1525-3"
-           sodipodi:role="line">Nome</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-1386.9069"
-         y="2055.8645"
-         id="text1527-1-8"><tspan
-           sodipodi:role="line"
-           id="tspan1525-2-5"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="1908.4843"
+             x="-1379.3716"
+             id="tspan1525-3"
+             sodipodi:role="line">Nome</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-1386.9069"
-           y="2055.8645">Itens</tspan></text>
-      <text
-         id="text1527-1-9-5"
-         y="2198.0103"
-         x="-1391.4855"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           y="2055.8645"
+           id="text1527-1-8"><tspan
+             sodipodi:role="line"
+             id="tspan1525-2-5"
+             x="-1386.9069"
+             y="2055.8645">Itens</tspan></text>
+        <text
+           id="text1527-1-9-5"
            y="2198.0103"
            x="-1391.4855"
-           id="tspan1525-2-7-0"
-           sodipodi:role="line">Valor</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-691.8877"
-         y="2048.9885"
-         id="text1527-1-9-3-1"><tspan
-           sodipodi:role="line"
-           id="tspan1525-2-7-8-2"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="2198.0103"
+             x="-1391.4855"
+             id="tspan1525-2-7-0"
+             sodipodi:role="line">Valor</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-691.8877"
-           y="2048.9885">Imagem</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-993.09113"
-         y="1823.031"
-         id="text1527-0-6"><tspan
-           sodipodi:role="line"
-           id="tspan1525-9-4"
+           y="2048.9885"
+           id="text1527-1-9-3-1"><tspan
+             sodipodi:role="line"
+             id="tspan1525-2-7-8-2"
+             x="-691.8877"
+             y="2048.9885">Imagem</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-993.09113"
-           y="1823.031">Pedido</tspan></text>
-    </g>
-    <rect
-       y="2252.634"
-       x="-364.04315"
-       height="99.027267"
-       width="99.02726"
-       id="rect882-7-6-1-7-2-8"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="scale(-1,1)" />
-    <g
-       transform="translate(1548.1161,1237.9698)"
-       id="g1616-3-5">
+           y="1823.031"
+           id="text1527-0-6"><tspan
+             sodipodi:role="line"
+             id="tspan1525-9-4"
+             x="-993.09113"
+             y="1823.031">Pedido</tspan></text>
+      </g>
       <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-1-6"
-         width="1144.3872"
-         height="552.40149"
-         x="-1490.7351"
-         y="1769.2256" />
-      <rect
-         y="1852.9667"
-         x="-754.74744"
-         height="356.96719"
-         width="333.94684"
-         id="rect882-0-5-9-3-6-8-2"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-9-7-5"
-         width="585.49866"
-         height="79.874825"
-         x="-1415.4216"
-         y="1852.6794" />
-      <rect
-         y="2000.146"
-         x="-1420.6628"
-         height="79.874825"
-         width="606.92609"
-         id="rect882-0-5-9-3-6-9-8-4-2"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-9-8-5-1-6"
-         width="606.92609"
-         height="79.874825"
-         x="-1416.0344"
-         y="2134.3481" />
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-1379.3716"
-         y="1908.4843"
-         id="text1527-6-9"><tspan
-           sodipodi:role="line"
-           id="tspan1525-3-1"
+         y="2252.634"
+         x="-364.04315"
+         height="99.027267"
+         width="99.02726"
+         id="rect882-7-6-1-7-2-8"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="scale(-1,1)" />
+      <g
+         transform="translate(1548.1161,1237.9698)"
+         id="g1616-3-5">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-1-6"
+           width="1144.3872"
+           height="552.40149"
+           x="-1490.7351"
+           y="1769.2256" />
+        <rect
+           y="1852.9667"
+           x="-754.74744"
+           height="356.96719"
+           width="333.94684"
+           id="rect882-0-5-9-3-6-8-2"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-9-7-5"
+           width="585.49866"
+           height="79.874825"
+           x="-1415.4216"
+           y="1852.6794" />
+        <rect
+           y="2000.146"
+           x="-1420.6628"
+           height="79.874825"
+           width="606.92609"
+           id="rect882-0-5-9-3-6-9-8-4-2"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-9-8-5-1-6"
+           width="606.92609"
+           height="79.874825"
+           x="-1416.0344"
+           y="2134.3481" />
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-1379.3716"
-           y="1908.4843">Nome</tspan></text>
-      <text
-         id="text1527-1-8-3"
-         y="2055.8645"
-         x="-1386.9069"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           y="1908.4843"
+           id="text1527-6-9"><tspan
+             sodipodi:role="line"
+             id="tspan1525-3-1"
+             x="-1379.3716"
+             y="1908.4843">Nome</tspan></text>
+        <text
+           id="text1527-1-8-3"
            y="2055.8645"
            x="-1386.9069"
-           id="tspan1525-2-5-3"
-           sodipodi:role="line">Itens</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-1391.4855"
-         y="2198.0103"
-         id="text1527-1-9-5-1"><tspan
-           sodipodi:role="line"
-           id="tspan1525-2-7-0-5"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="2055.8645"
+             x="-1386.9069"
+             id="tspan1525-2-5-3"
+             sodipodi:role="line">Itens</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-1391.4855"
-           y="2198.0103">Valor</tspan></text>
-      <text
-         id="text1527-1-9-3-1-2"
-         y="2048.9885"
-         x="-691.8877"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           y="2198.0103"
+           id="text1527-1-9-5-1"><tspan
+             sodipodi:role="line"
+             id="tspan1525-2-7-0-5"
+             x="-1391.4855"
+             y="2198.0103">Valor</tspan></text>
+        <text
+           id="text1527-1-9-3-1-2"
            y="2048.9885"
            x="-691.8877"
-           id="tspan1525-2-7-8-2-6"
-           sodipodi:role="line">Imagem</tspan></text>
-      <text
-         id="text1527-0-6-9"
-         y="1823.031"
-         x="-993.09113"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="2048.9885"
+             x="-691.8877"
+             id="tspan1525-2-7-8-2-6"
+             sodipodi:role="line">Imagem</tspan></text>
+        <text
+           id="text1527-0-6-9"
            y="1823.031"
            x="-993.09113"
-           id="tspan1525-9-4-4"
-           sodipodi:role="line">Pedido</tspan></text>
-    </g>
-    <rect
-       transform="scale(-1,1)"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect882-7-6-1-7-2-8-4"
-       width="99.02726"
-       height="99.027267"
-       x="-366.40839"
-       y="2908.168" />
-    <g
-       transform="translate(1543.9173,1893.5515)"
-       id="g1616-3-6">
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="1823.031"
+             x="-993.09113"
+             id="tspan1525-9-4-4"
+             sodipodi:role="line">Pedido</tspan></text>
+      </g>
       <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-1-0"
-         width="1144.3872"
-         height="552.40149"
-         x="-1490.7351"
-         y="1769.2256" />
-      <rect
-         y="1852.9667"
-         x="-754.74744"
-         height="356.96719"
-         width="333.94684"
-         id="rect882-0-5-9-3-6-8-7"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-9-7-4"
-         width="585.49866"
-         height="79.874825"
-         x="-1415.4216"
-         y="1852.6794" />
-      <rect
-         y="2000.146"
-         x="-1420.6628"
-         height="79.874825"
-         width="606.92609"
-         id="rect882-0-5-9-3-6-9-8-4-3"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-9-8-5-1-7"
-         width="606.92609"
-         height="79.874825"
-         x="-1416.0344"
-         y="2134.3481" />
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-1379.3716"
-         y="1908.4843"
-         id="text1527-6-90"><tspan
-           sodipodi:role="line"
-           id="tspan1525-3-0"
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1-7-2-8-4"
+         width="99.02726"
+         height="99.027267"
+         x="-366.40839"
+         y="2908.168" />
+      <g
+         transform="translate(1543.9173,1893.5515)"
+         id="g1616-3-6">
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-1-0"
+           width="1144.3872"
+           height="552.40149"
+           x="-1490.7351"
+           y="1769.2256" />
+        <rect
+           y="1852.9667"
+           x="-754.74744"
+           height="356.96719"
+           width="333.94684"
+           id="rect882-0-5-9-3-6-8-7"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-9-7-4"
+           width="585.49866"
+           height="79.874825"
+           x="-1415.4216"
+           y="1852.6794" />
+        <rect
+           y="2000.146"
+           x="-1420.6628"
+           height="79.874825"
+           width="606.92609"
+           id="rect882-0-5-9-3-6-9-8-4-3"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-9-8-5-1-7"
+           width="606.92609"
+           height="79.874825"
+           x="-1416.0344"
+           y="2134.3481" />
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-1379.3716"
-           y="1908.4843">Nome</tspan></text>
-      <text
-         id="text1527-1-8-2"
-         y="2055.8645"
-         x="-1386.9069"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           y="1908.4843"
+           id="text1527-6-90"><tspan
+             sodipodi:role="line"
+             id="tspan1525-3-0"
+             x="-1379.3716"
+             y="1908.4843">Nome</tspan></text>
+        <text
+           id="text1527-1-8-2"
            y="2055.8645"
            x="-1386.9069"
-           id="tspan1525-2-5-2"
-           sodipodi:role="line">Itens</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-1391.4855"
-         y="2198.0103"
-         id="text1527-1-9-5-6"><tspan
-           sodipodi:role="line"
-           id="tspan1525-2-7-0-9"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="2055.8645"
+             x="-1386.9069"
+             id="tspan1525-2-5-2"
+             sodipodi:role="line">Itens</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-1391.4855"
-           y="2198.0103">Valor</tspan></text>
-      <text
-         id="text1527-1-9-3-1-0"
-         y="2048.9885"
-         x="-691.8877"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           y="2198.0103"
+           id="text1527-1-9-5-6"><tspan
+             sodipodi:role="line"
+             id="tspan1525-2-7-0-9"
+             x="-1391.4855"
+             y="2198.0103">Valor</tspan></text>
+        <text
+           id="text1527-1-9-3-1-0"
            y="2048.9885"
            x="-691.8877"
-           id="tspan1525-2-7-8-2-3"
-           sodipodi:role="line">Imagem</tspan></text>
-      <text
-         id="text1527-0-6-5"
-         y="1823.031"
-         x="-993.09113"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="2048.9885"
+             x="-691.8877"
+             id="tspan1525-2-7-8-2-3"
+             sodipodi:role="line">Imagem</tspan></text>
+        <text
+           id="text1527-0-6-5"
            y="1823.031"
            x="-993.09113"
-           id="tspan1525-9-4-5"
-           sodipodi:role="line">Pedido</tspan></text>
-    </g>
-    <rect
-       transform="scale(-1,1)"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect882-7-6-1-7-2-8-8"
-       width="99.02726"
-       height="99.027267"
-       x="-362.20956"
-       y="3563.7498" />
-    <g
-       id="g1616-3-5-7"
-       transform="translate(1546.2825,2549.0855)">
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="1823.031"
+             x="-993.09113"
+             id="tspan1525-9-4-5"
+             sodipodi:role="line">Pedido</tspan></text>
+      </g>
       <rect
-         y="1769.2256"
-         x="-1490.7351"
-         height="552.40149"
-         width="1144.3872"
-         id="rect882-0-5-9-3-1-6-1"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-8-2-7"
-         width="333.94684"
-         height="356.96719"
-         x="-754.74744"
-         y="1852.9667" />
-      <rect
-         y="1852.6794"
-         x="-1415.4216"
-         height="79.874825"
-         width="585.49866"
-         id="rect882-0-5-9-3-6-9-7-5-0"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <rect
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect882-0-5-9-3-6-9-8-4-2-6"
-         width="606.92609"
-         height="79.874825"
-         x="-1420.6628"
-         y="2000.146" />
-      <rect
-         y="2134.3481"
-         x="-1416.0344"
-         height="79.874825"
-         width="606.92609"
-         id="rect882-0-5-9-3-6-9-8-5-1-6-0"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <text
-         id="text1527-6-9-4"
-         y="1908.4843"
-         x="-1379.3716"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1-7-2-8-8"
+         width="99.02726"
+         height="99.027267"
+         x="-362.20956"
+         y="3563.7498" />
+      <g
+         id="g1616-3-5-7"
+         transform="translate(1546.2825,2549.0855)">
+        <rect
+           y="1769.2256"
+           x="-1490.7351"
+           height="552.40149"
+           width="1144.3872"
+           id="rect882-0-5-9-3-1-6-1"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.81004;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.3915;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-8-2-7"
+           width="333.94684"
+           height="356.96719"
+           x="-754.74744"
+           y="1852.9667" />
+        <rect
+           y="1852.6794"
+           x="-1415.4216"
+           height="79.874825"
+           width="585.49866"
+           id="rect882-0-5-9-3-6-9-7-5-0"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.12426;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect882-0-5-9-3-6-9-8-4-2-6"
+           width="606.92609"
+           height="79.874825"
+           x="-1420.6628"
+           y="2000.146" />
+        <rect
+           y="2134.3481"
+           x="-1416.0344"
+           height="79.874825"
+           width="606.92609"
+           id="rect882-0-5-9-3-6-9-8-5-1-6-0"
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.16278;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           id="text1527-6-9-4"
            y="1908.4843"
            x="-1379.3716"
-           id="tspan1525-3-1-1"
-           sodipodi:role="line">Nome</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-1386.9069"
-         y="2055.8645"
-         id="text1527-1-8-3-3"><tspan
-           sodipodi:role="line"
-           id="tspan1525-2-5-3-0"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="1908.4843"
+             x="-1379.3716"
+             id="tspan1525-3-1-1"
+             sodipodi:role="line">Nome</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-1386.9069"
-           y="2055.8645">Itens</tspan></text>
-      <text
-         id="text1527-1-9-5-1-2"
-         y="2198.0103"
-         x="-1391.4855"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         xml:space="preserve"><tspan
+           y="2055.8645"
+           id="text1527-1-8-3-3"><tspan
+             sodipodi:role="line"
+             id="tspan1525-2-5-3-0"
+             x="-1386.9069"
+             y="2055.8645">Itens</tspan></text>
+        <text
+           id="text1527-1-9-5-1-2"
            y="2198.0103"
            x="-1391.4855"
-           id="tspan1525-2-7-0-5-9"
-           sodipodi:role="line">Valor</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-691.8877"
-         y="2048.9885"
-         id="text1527-1-9-3-1-2-6"><tspan
-           sodipodi:role="line"
-           id="tspan1525-2-7-8-2-6-0"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           xml:space="preserve"><tspan
+             y="2198.0103"
+             x="-1391.4855"
+             id="tspan1525-2-7-0-5-9"
+             sodipodi:role="line">Valor</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
            x="-691.8877"
-           y="2048.9885">Imagem</tspan></text>
+           y="2048.9885"
+           id="text1527-1-9-3-1-2-6"><tspan
+             sodipodi:role="line"
+             id="tspan1525-2-7-8-2-6-0"
+             x="-691.8877"
+             y="2048.9885">Imagem</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           x="-993.09113"
+           y="1823.031"
+           id="text1527-0-6-9-9"><tspan
+             sodipodi:role="line"
+             id="tspan1525-9-4-4-3"
+             x="-993.09113"
+             y="1823.031">Pedido</tspan></text>
+      </g>
+      <rect
+         y="4219.2837"
+         x="-364.5748"
+         height="99.027267"
+         width="99.02726"
+         id="rect882-7-6-1-7-2-8-4-5"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="scale(-1,1)" />
+    </g>
+    <text
+       xml:space="preserve"
+       id="text642"
+       style="line-height:1.25;font-family:sans-serif;font-size:53.33333333px;-inkscape-font-specification:sans-serif;white-space:pre;shape-inside:url(#rect644);" />
+    <g
+       id="g752">
+      <text
+         id="text876-3"
+         y="122.58793"
+         x="3776.3806"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1"
+           y="122.58793"
+           x="3776.3806"
+           id="tspan874-6"
+           sodipodi:role="line">Detalhes do Item</tspan></text>
+      <rect
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:9.06761;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-0-3"
+         width="1239.9169"
+         height="687.24878"
+         x="3564.2429"
+         y="225.79813" />
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-5"
+         width="99.02726"
+         height="99.027267"
+         x="-4136.8188"
+         y="123.39544" />
+      <text
+         xml:space="preserve"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         x="3803.2458"
+         y="584.78467"
+         id="text943-9-2"><tspan
+           sodipodi:role="line"
+           id="tspan941-0-7"
+           x="3803.2458"
+           y="584.78467">Image (banner)</tspan></text>
+      <rect
+         y="1017.7271"
+         x="3565.7493"
+         height="416.78815"
+         width="1240.1533"
+         id="rect882-0-5-0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.06212;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text943-9-0-9"
+         y="1238.8318"
+         x="3750.8704"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           y="1238.8318"
+           x="3750.8704"
+           id="tspan941-0-4-3"
+           sodipodi:role="line">Detalhes (Texto)</tspan></text>
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1-6"
+         width="99.02726"
+         height="99.027267"
+         x="-3663.2703"
+         y="913.04688" />
+      <rect
+         y="12.357414"
+         x="3570.1086"
+         height="4971.0078"
+         width="1229.5648"
+         id="rect1047-2"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:11.9798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text943-9-0-9-6"
+         y="1718.2999"
+         x="3650.3767"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           y="1718.2999"
+           x="3650.3767"
+           id="tspan941-0-4-3-1"
+           sodipodi:role="line">Observação (TextArea)</tspan></text>
+      <rect
+         y="1533.5424"
+         x="3565.7493"
+         height="260.00339"
+         width="1241.6343"
+         id="rect882-0-5-0-6"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.58118;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1-6-1"
+         width="99.02726"
+         height="99.027267"
+         x="-3664.7766"
+         y="1434.5151" />
+      <text
+         id="text943-9-0-9-6-5"
+         y="2052.5381"
+         x="4181.3691"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           y="2052.5381"
+           x="4181.3691"
+           id="tspan941-0-4-3-1-9"
+           sodipodi:role="line"
+           style="font-size:74.6667px">Adicionar   R$ ?</tspan></text>
+      <rect
+         y="1892.573"
+         x="3565.7493"
+         height="260.00339"
+         width="1241.6343"
+         id="rect882-0-5-0-6-4"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.58118;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1-6-1-9"
+         width="99.02726"
+         height="99.027267"
+         x="-3664.7766"
+         y="1793.5458" />
+      <rect
+         y="1967.8726"
+         x="3658.1765"
+         height="118.68877"
+         width="370.91669"
+         id="rect882-0-5-0-6-4-0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.06102;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <text
          xml:space="preserve"
          style="font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-         x="-993.09113"
-         y="1823.031"
-         id="text1527-0-6-9-9"><tspan
+         x="3753.4595"
+         y="2043.5776"
+         id="text650"><tspan
            sodipodi:role="line"
-           id="tspan1525-9-4-4-3"
-           x="-993.09113"
-           y="1823.031">Pedido</tspan></text>
+           id="tspan648"
+           x="3753.4595"
+           y="2043.5776">-   1   +</tspan></text>
     </g>
-    <rect
-       y="4219.2837"
-       x="-364.5748"
-       height="99.027267"
-       width="99.02726"
-       id="rect882-7-6-1-7-2-8-4-5"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       transform="scale(-1,1)" />
+    <g
+       id="g955">
+      <text
+         id="text876-3-9"
+         y="137.86075"
+         x="5380.2676"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:sans-serif;-inkscape-font-specification:sans-serif;stroke:#000000;stroke-opacity:1"
+           y="137.86075"
+           x="5380.2676"
+           id="tspan874-6-1"
+           sodipodi:role="line">Carrinho</tspan></text>
+      <rect
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8.14525;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-0-3-7"
+         width="1240.8392"
+         height="554.13306"
+         x="4985.6685"
+         y="240.60977" />
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-5-7"
+         width="99.02726"
+         height="99.027267"
+         x="-5558.7061"
+         y="138.66824" />
+      <text
+         xml:space="preserve"
+         style="font-size:85.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         x="5213.1328"
+         y="504.0575"
+         id="text943-9-2-1"><tspan
+           sodipodi:role="line"
+           x="5213.1328"
+           y="504.0575"
+           style="font-size:85.3333px"
+           id="tspan919">Confirmar Endereço </tspan><tspan
+           sodipodi:role="line"
+           x="5213.1328"
+           y="610.72412"
+           style="font-size:85.3333px"
+           id="tspan923">(Texto)</tspan></text>
+      <rect
+         y="900.75525"
+         x="4988.5068"
+         height="792.31946"
+         width="1237.4889"
+         id="rect882-0-5-0-5"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:9.72659;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text943-9-0-9-9"
+         y="1246.1394"
+         x="5144.8618"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           y="1246.1394"
+           x="5144.8618"
+           id="tspan941-0-4-3-7"
+           sodipodi:role="line"
+           style="font-size:74.6667px">Lista de Itens no Carrinho</tspan><tspan
+           y="1366.1394"
+           x="5144.8618"
+           sodipodi:role="line"
+           id="tspan925"
+           style="font-size:74.6667px">E Total (Texto)</tspan></text>
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1-6-7"
+         width="99.02726"
+         height="99.027267"
+         x="-5084.6958"
+         y="794.7428" />
+      <rect
+         y="27.630213"
+         x="4991.9956"
+         height="4971.0078"
+         width="1229.5648"
+         id="rect1047-2-6"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:11.9798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         id="text943-9-0-9-6-7"
+         y="1976.8595"
+         x="5073.1343"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           y="1976.8595"
+           x="5073.1343"
+           id="tspan941-0-4-3-1-3"
+           sodipodi:role="line">Forma de Pagamento</tspan><tspan
+           y="2096.8594"
+           x="5073.1343"
+           sodipodi:role="line"
+           id="tspan931"> (Lista)</tspan></text>
+      <rect
+         y="1793.1237"
+         x="4989.5288"
+         height="486.05038"
+         width="1239.5908"
+         id="rect882-0-5-0-6-6"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7.62464;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1-6-1-5"
+         width="99.02726"
+         height="99.027267"
+         x="-5087.5342"
+         y="1693.0747" />
+      <text
+         id="text943-9-0-9-6-5-6"
+         y="2538.1663"
+         x="5265.1484"
+         style="font-size:96px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+         xml:space="preserve"><tspan
+           y="2538.1663"
+           x="5265.1484"
+           id="tspan941-0-4-3-1-9-3"
+           sodipodi:role="line"
+           style="font-size:74.6667px">Fazer Pedido (Botão)</tspan></text>
+      <rect
+         y="2378.2014"
+         x="4989.5288"
+         height="260.00339"
+         width="1241.6343"
+         id="rect882-0-5-0-6-4-9"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.58118;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.972735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect882-7-6-1-6-1-9-4"
+         width="99.02726"
+         height="99.027267"
+         x="-5088.5562"
+         y="2279.1741" />
+    </g>
   </g>
 </svg>

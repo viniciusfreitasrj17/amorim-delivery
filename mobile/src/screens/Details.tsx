@@ -5,19 +5,22 @@ import { RootStackParamList } from "../../App";
 import { styles } from "../styles/global";
 import Title from "../components/TitleScreen";
 
-type SearchScreenRouteProp = StackNavigationProp<RootStackParamList, "Search">;
+type DetailsScreenRouteProp = StackNavigationProp<
+  RootStackParamList,
+  "Details"
+>;
 
 type Props = {
-  navigation: SearchScreenRouteProp;
+  navigation: DetailsScreenRouteProp;
 };
 
-const Search: React.FC<Props> = ({ navigation }) => {
+const Details: React.FC<Props> = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
-      <Title title="Busca" navigation={navigation} menu={false} />
+      <Title title="Detalhes" navigation={navigation} menu={false} />
       {/* <Text>Meu nome é: {route.params?.name} </Text> */}
     </SafeAreaView>
   );
 };
 
-export default Search;
+export default Details;

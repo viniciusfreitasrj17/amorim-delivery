@@ -4,9 +4,12 @@ import {
   DrawerContentScrollView,
   DrawerItemList,
   DrawerItem,
+  DrawerContentComponentProps,
 } from "@react-navigation/drawer";
 
-const CustomDrawer: React.FC<any> = (props: any) => {
+const CustomDrawer: React.FC<DrawerContentComponentProps> = (
+  props: DrawerContentComponentProps
+) => {
   return (
     <View style={styles.container}>
       <View style={styles.userArea}>
@@ -17,7 +20,14 @@ const CustomDrawer: React.FC<any> = (props: any) => {
       </View>
 
       <DrawerContentScrollView {...props}>
-        <DrawerItemList {...props} />
+        <DrawerItem
+          label="Home"
+          onPress={() => props.navigation.navigate("Home")}
+        />
+        <DrawerItem
+          label="Search"
+          onPress={() => props.navigation.navigate("Search")}
+        />
         <DrawerItem label="Help" onPress={() => {}} />
       </DrawerContentScrollView>
     </View>

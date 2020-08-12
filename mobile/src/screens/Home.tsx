@@ -184,6 +184,7 @@ const Home: React.FC<Props> = ({ navigation }) => {
               justifyContent: "space-between",
               marginVertical: 5,
             }}
+            onPress={() => navigation.navigate("Details")}
           >
             <View style={{ flex: 1 }}>
               <Text> {item.name} </Text>
@@ -211,7 +212,7 @@ const Home: React.FC<Props> = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Title title="Home" navigation={navigation} />
+      <Title title="Home" navigation={navigation} menu={true} />
       <View style={{ height: "auto" }}>
         <View>
           <View style={{ height: "auto" }}>

@@ -9,16 +9,17 @@ import {
 interface State {
   title: string;
   navigation?: any;
+  menu?: boolean;
 }
 
 type Props = State;
 // @ts-ignore
-const TitleScreen: React.FC<Props> = ({ title, navigation }) => {
+const TitleScreen: React.FC<Props> = ({ title, navigation, menu }) => {
   const [firstButton, setFirstButton] = useState();
   const [secondButton, setSecondButton] = useState();
 
   useEffect(() => {
-    if (title !== "Busca") {
+    if (menu) {
       setFirstButton(
         //@ts-ignore
         <TouchableOpacity
